@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_gdpr_viola_0_breach_task" version="2" view="workspace-gdpr-violation-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Breach Task - Workspace GDPR Violation 0" name="x_snc_gdpr_viola_0_breach_task" related_list="NULL" sys_domain="global" view="994da1ca6d4ab550a3d7375187b31756">9dc9c5b297823110e110be4e6253aff0</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>task_sla.task</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 12:47:42</sys_created_on>
+            <sys_id>5dc9c5b297823110e110be4e6253aff2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 12:47:42</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Breach Task - Workspace GDPR Violation 0</calculated_name>
+            <filter/>
+            <name>x_snc_gdpr_viola_0_breach_task</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 12:47:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9dc9c5b297823110e110be4e6253aff0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Breach Task - Workspace GDPR Violation 0</sys_name>
+            <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_gdpr_viola_0_breach_task_workspace-gdpr-violation-0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 12:47:42</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace GDPR Violation 0" name="workspace-gdpr-violation-0">994da1ca6d4ab550a3d7375187b31756</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

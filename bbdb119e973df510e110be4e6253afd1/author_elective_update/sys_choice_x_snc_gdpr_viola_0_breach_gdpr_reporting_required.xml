@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="gdpr_reporting_required" table="x_snc_gdpr_viola_0_breach" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>gdpr_reporting_required</element>
+            <name>x_snc_gdpr_viola_0_breach</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 14:45:29</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>gdpr_reporting_required</sys_name>
+            <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+            <sys_update_name>sys_choice_x_snc_gdpr_viola_0_breach_gdpr_reporting_required</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 14:45:29</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gdpr_reporting_required</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>x_snc_gdpr_viola_0_breach</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 14:45:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 14:45:29</sys_updated_on>
+            <value>yes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gdpr_reporting_required</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>x_snc_gdpr_viola_0_breach</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 14:45:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 14:45:29</sys_updated_on>
+            <value>no</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="485c199e973df510e110be4e6253afd0" extends="task" label="Breach" max_length="40" name="x_snc_gdpr_viola_0_breach" type="collection">
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Confidentiality" sequence="0" value="confidentiality"/>
+                <element inactive_on_update="false" label="Integrity" sequence="1" value="integrity"/>
+                <element inactive_on_update="false" label="Availability" sequence="2" value="availability"/>
+            </choice>
+        </element>
+        <element label="Data Records" max_length="40" name="data_records" type="integer"/>
+        <element choice="1" label="GDPR Reporting Required" max_length="40" name="gdpr_reporting_required" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Involved Persons" max_length="40" name="involved_persons" type="integer"/>
+        <element label="Likely Consequences" max_length="1000" name="likely_consequences" type="string"/>
+        <element label="Measures Taken" max_length="1000" name="measures_taken" type="string"/>
+        <element label="Persons Notified" max_length="40" name="persons_notified" type="boolean"/>
+        <element label="Reported to Datatilsynet" max_length="40" name="reported_to_datatilsynet" type="boolean"/>
+        <element label="Title" mandatory="true" max_length="100" name="title" type="string"/>
+    </element>
+</database>

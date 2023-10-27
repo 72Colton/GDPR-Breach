@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="bac7b47697ca79506692df14a253afc9" sys_domain="global" table="x_snc_gdpr_viola_0_breach_task" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 11:29:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bec7b47697ca79506692df14a253afdc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_gdpr_viola_0_breach_task" name="x_snc_gdpr_viola_0_breach_task" sys_domain="global" view="Default view">bac7b47697ca79506692df14a253afc9</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_gdpr_viola_0_breach_task" sys_domain="global" view="Default view">f6c7b47697ca79506692df14a253afd4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 11:29:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 11:29:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32c7b47697ca79506692df14a253afd4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_gdpr_viola_0_breach_task" name="x_snc_gdpr_viola_0_breach_task" sys_domain="global" view="Default view">bac7b47697ca79506692df14a253afc9</sys_ui_form>
+            <sys_ui_section caption="Scope" display_value="Scope" name="x_snc_gdpr_viola_0_breach_task" sys_domain="global" view="Default view">b2c7b47697ca79506692df14a253afcc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 11:29:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_gdpr_viola_0_breach_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 11:29:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bac7b47697ca79506692df14a253afc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_gdpr_viola_0_breach_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+            <sys_update_name>sys_ui_form_sections_bac7b47697ca79506692df14a253afc9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 11:29:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

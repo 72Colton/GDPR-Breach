@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_gdpr_viola_0_breach" version="2" view="workspace-gdpr-violation-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Breach - Workspace GDPR Violation 0" name="x_snc_gdpr_viola_0_breach" related_list="NULL" sys_domain="global" view="994da1ca6d4ab550a3d7375187b31756">883085b697427950e110be4e6253afde</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>task_sla.task</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mattias.johnsson@snc</sys_created_by>
+            <sys_created_on>2023-10-26 12:05:50</sys_created_on>
+            <sys_id>043085b697427950e110be4e6253afe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mattias.johnsson@snc</sys_updated_by>
+            <sys_updated_on>2023-10-26 12:05:50</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Breach - Workspace GDPR Violation 0" name="x_snc_gdpr_viola_0_breach" related_list="NULL" sys_domain="global" view="994da1ca6d4ab550a3d7375187b31756">883085b697427950e110be4e6253afde</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_snc_gdpr_viola_0_breach_task.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>mattias.johnsson@snc</sys_created_by>
+            <sys_created_on>2023-10-26 12:05:50</sys_created_on>
+            <sys_id>4c3085b697427950e110be4e6253afe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mattias.johnsson@snc</sys_updated_by>
+            <sys_updated_on>2023-10-26 12:05:50</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Breach - Workspace GDPR Violation 0</calculated_name>
+            <filter/>
+            <name>x_snc_gdpr_viola_0_breach</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>mattias.johnsson@snc</sys_created_by>
+            <sys_created_on>2023-10-26 12:05:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>883085b697427950e110be4e6253afde</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Breach - Workspace GDPR Violation 0</sys_name>
+            <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_gdpr_viola_0_breach_workspace-gdpr-violation-0</sys_update_name>
+            <sys_updated_by>mattias.johnsson@snc</sys_updated_by>
+            <sys_updated_on>2023-10-26 12:05:50</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace GDPR Violation 0" name="workspace-gdpr-violation-0">994da1ca6d4ab550a3d7375187b31756</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

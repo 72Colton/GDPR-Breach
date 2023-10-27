@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Scope" section_id="8f4d25ca974ab5506692df14a253afc0" sys_domain="global" table="x_snc_gdpr_viola_0_breach" version="3" view="workspace-gdpr-violation-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>involved_persons</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-24 10:46:51</sys_created_on>
+            <sys_id>27ead642974eb5506692df14a253af7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Scope" display_value="Scope" name="x_snc_gdpr_viola_0_breach" sys_domain="global" view="994da1ca6d4ab550a3d7375187b31756">8f4d25ca974ab5506692df14a253afc0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-24 10:46:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-24 10:46:51</sys_created_on>
+            <sys_id>23ead642974eb5506692df14a253af7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Scope" display_value="Scope" name="x_snc_gdpr_viola_0_breach" sys_domain="global" view="994da1ca6d4ab550a3d7375187b31756">8f4d25ca974ab5506692df14a253afc0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-24 10:46:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>data_records</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-24 10:46:51</sys_created_on>
+            <sys_id>2bead642974eb5506692df14a253af7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Scope" display_value="Scope" name="x_snc_gdpr_viola_0_breach" sys_domain="global" view="994da1ca6d4ab550a3d7375187b31756">8f4d25ca974ab5506692df14a253afc0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-24 10:46:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Scope</caption>
+            <header>false</header>
+            <name>x_snc_gdpr_viola_0_breach</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-24 07:27:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f4d25ca974ab5506692df14a253afc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_gdpr_viola_0_breach</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+            <sys_update_name>sys_ui_section_8f4d25ca974ab5506692df14a253afc0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-24 07:27:28</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace GDPR Violation 0" name="workspace-gdpr-violation-0">994da1ca6d4ab550a3d7375187b31756</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

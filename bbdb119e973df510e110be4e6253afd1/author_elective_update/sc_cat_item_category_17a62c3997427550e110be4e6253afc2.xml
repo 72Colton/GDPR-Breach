@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="GDPR Violation">7c6564f597427550e110be4e6253af9a</sc_cat_item>
+        <sc_category display_value="Office">109cdff8c6112276003b17991a09ad65</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 07:40:27</sys_created_on>
+        <sys_id>17a62c3997427550e110be4e6253afc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office.GDPR Violation</sys_name>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sc_cat_item_category_17a62c3997427550e110be4e6253afc2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 07:40:27</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</application>
+        <file_path/>
+        <instance_id>25f1f751db6ee9d4b847ac44d4961968</instance_id>
+        <instance_name>jcmdemodvl2</instance_name>
+        <name>sc_cat_item_category_17a62c3997427550e110be4e6253afc2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="GDPR Violation">7c6564f597427550e110be4e6253af9a</sc_cat_item><sc_category display_value="Office">109cdff8c6112276003b17991a09ad65</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-23 07:40:27</sys_created_on><sys_id>17a62c3997427550e110be4e6253afc2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Office.GDPR Violation</sys_name><sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package><sys_policy/><sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope><sys_update_name>sc_cat_item_category_17a62c3997427550e110be4e6253afc2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-23 07:40:27</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>2076439367</payload_hash>
+        <record_name>Office.GDPR Violation</record_name>
+        <reverted_from/>
+        <source>73db119e973df510e110be4e6253afd6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 07:40:27</sys_created_on>
+        <sys_id>27a62c3997427550e110be4e6253afc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b5b7a5c190000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 07:40:27</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>67a62c39e942755011cbe09429ca17c5</update_guid>
+        <update_guid_history>67a62c39e942755011cbe09429ca17c5:2076439367</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Office.GDPR Violation">5ce6207997427550e110be4e6253af8d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 07:41:19</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>55420573e20a44ac9081b6a9eab0a4e4</sys_id>
+        <sys_metadata>17a62c3997427550e110be4e6253afc2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office.GDPR Violation</sys_name>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_scope_delete display_value="">6c6ac17dde8846c480ab8d486cca2731</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_17a62c3997427550e110be4e6253afc2</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_17a62c3997427550e110be4e6253afc2">27a62c3997427550e110be4e6253afc6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 07:41:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 10:55:06</sys_created_on>
+        <sys_id>48007cfa978a79506692df14a253af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FieldWrapper.toString</sys_name>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sys_scope_privilege_48007cfa978a79506692df14a253af4e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 10:55:06</sys_updated_on>
+        <target_name>FieldWrapper.toString</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">e54da1ca894ab5504d170a0ba260bd59</canvas>
+        <component display_value="Column">2bd5dc19a7ad083941b7c992a966dd78</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"disableTooltip":false,"showXGrid":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","colorConfig":{"type":"default"},"chartVariation":"stacked","extensionType":"bar","newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Breach","sourceType":"table","tableOrViewName":"x_snc_gdpr_viola_0_breach","filterQuery":"stateIN3,4,7","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4X3NuY19nZHByX3Zpb2xhXzBfYnJlYWNoMTY5ODEzMzM4MjA0NA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"showBorder":true,"bareBorder":false,"dataCategory":"group","telemetry":null,"showDataPassthrough":false,"refreshRequest":"","showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV4X3NuY19nZHByX3Zpb2xhXzBfYnJlYWNoMTY5ODEzMzM4MjA0NA==","id":"ZEdGaWJHVjRYM051WTE5blpIQnlYM1pwYjJ4aFh6QmZZbkpsWVdOb01UWTVPREV6TXpNNE1qQTBOQT09MTY5ODEzMzM4MzI5NA==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"sortBy":"value","sortByOrder":"desc","trendBy":{"trendByFrequency":"date","trendByMinuteInterval":null,"trendByFields":[{"field":"activity_due","metric":"ZEdGaWJHVjRYM051WTE5blpIQnlYM1pwYjJ4aFh6QmZZbkpsWVdOb01UWTVPREV6TXpNNE1qQTBOQT09MTY5ODEzMzM4MzI5NA=="}]},"showChange":null,"showChangePercentage":null,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":null,"showSparkline":null,"showMetricLabel":null,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":null,"enableDrilldown":true,"enableClickAndStay":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":false,"hideDevSettings":false,"filterConfigurations":[],"contextMenuActions":[],"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":"latest","showChangeFrom":null,"startTime":null,"endTime":null,"dateFormat":"default","noDebounce":""}</component_props>
+        <h>13</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:01:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ec253d06978ab5506692df14a253afb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>par_dashboard_widget_ec253d06978ab5506692df14a253afb0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:01:43</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>26</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</application>
+        <file_path/>
+        <instance_id>25f1f751db6ee9d4b847ac44d4961968</instance_id>
+        <instance_name>jcmdemodvl2</instance_name>
+        <name>par_dashboard_widget_ec253d06978ab5506692df14a253afb0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">e54da1ca894ab5504d170a0ba260bd59</canvas><component display_value="Column">2bd5dc19a7ad083941b7c992a966dd78</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"disableTooltip":false,"showXGrid":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","colorConfig":{"type":"default"},"chartVariation":"stacked","extensionType":"bar","newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Breach","sourceType":"table","tableOrViewName":"x_snc_gdpr_viola_0_breach","filterQuery":"stateIN3,4,7","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4X3NuY19nZHByX3Zpb2xhXzBfYnJlYWNoMTY5ODEzMzM4MjA0NA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"showBorder":true,"bareBorder":false,"dataCategory":"group","telemetry":null,"showDataPassthrough":false,"refreshRequest":"","showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV4X3NuY19nZHByX3Zpb2xhXzBfYnJlYWNoMTY5ODEzMzM4MjA0NA==","id":"ZEdGaWJHVjRYM051WTE5blpIQnlYM1pwYjJ4aFh6QmZZbkpsWVdOb01UWTVPREV6TXpNNE1qQTBOQT09MTY5ODEzMzM4MzI5NA==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"sortBy":"value","sortByOrder":"desc","trendBy":{"trendByFrequency":"date","trendByMinuteInterval":null,"trendByFields":[{"field":"activity_due","metric":"ZEdGaWJHVjRYM051WTE5blpIQnlYM1pwYjJ4aFh6QmZZbkpsWVdOb01UWTVPREV6TXpNNE1qQTBOQT09MTY5ODEzMzM4MzI5NA=="}]},"showChange":null,"showChangePercentage":null,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":null,"showSparkline":null,"showMetricLabel":null,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":null,"enableDrilldown":true,"enableClickAndStay":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":false,"hideDevSettings":false,"filterConfigurations":[],"contextMenuActions":[],"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":"latest","showChangeFrom":null,"startTime":null,"endTime":null,"dateFormat":"default","noDebounce":""}</component_props><h>13</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-10-24 08:01:43</sys_created_on><sys_domain>global</sys_domain><sys_id>ec253d06978ab5506692df14a253afb0</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package><sys_policy/><sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope><sys_update_name>par_dashboard_widget_ec253d06978ab5506692df14a253afb0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-10-24 08:01:43</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>26</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1093913090</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>73db119e973df510e110be4e6253afd6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:01:43</sys_created_on>
+        <sys_id>a8253d06978ab5506692df14a253afb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b60b42fa30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:01:43</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>ac253d06e08ab550d8ebc77fb3bd64b1</update_guid>
+        <update_guid_history>ac253d06e08ab550d8ebc77fb3bd64b1:-1093913090</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">ebfa39ca978ab5506692df14a253af0d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:27:19</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>3c7269f1d3e34e4d873596e19f6f05c9</sys_id>
+        <sys_metadata>ec253d06978ab5506692df14a253afb0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_scope_delete display_value="">6c6ac17dde8846c480ab8d486cca2731</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_ec253d06978ab5506692df14a253afb0</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_ec253d06978ab5506692df14a253afb0">a8253d06978ab5506692df14a253afb2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:27:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

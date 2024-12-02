@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Work Notes" section_id="7ec7b47697ca79506692df14a253afee" sys_domain="global" table="x_snc_gdpr_viola_0_breach_task" version="3" view="Workspace_GDPR_Violation_User">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 11:29:10</sys_created_on>
+            <sys_id>3ec7b47697ca79506692df14a253afef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Work Notes" display_value="Work Notes" name="x_snc_gdpr_viola_0_breach_task" sys_domain="global" view="61128a0697cab5506692df14a253afe6">7ec7b47697ca79506692df14a253afee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 11:29:10</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Work Notes</caption>
+            <header>false</header>
+            <name>x_snc_gdpr_viola_0_breach_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-26 11:29:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ec7b47697ca79506692df14a253afee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_gdpr_viola_0_breach_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+            <sys_update_name>sys_ui_section_7ec7b47697ca79506692df14a253afee</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-26 11:29:10</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace GDPR Violation User" name="Workspace_GDPR_Violation_User">61128a0697cab5506692df14a253afe6</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

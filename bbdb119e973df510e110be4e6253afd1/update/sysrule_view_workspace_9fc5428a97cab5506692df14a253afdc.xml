@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view_workspace">
+    <sysrule_view_workspace action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <default_tab_focus>Details</default_tab_focus>
+        <default_tab_order>true</default_tab_order>
+        <description/>
+        <disable_section_collapse>false</disable_section_collapse>
+        <experience_restricted>true</experience_restricted>
+        <hide_details>false</hide_details>
+        <hide_journal_input_fields>true</hide_journal_input_fields>
+        <hide_section_menu>false</hide_section_menu>
+        <name>Breach View Rule User</name>
+        <order>100</order>
+        <roles>x_snc_gdpr_viola_0.user</roles>
+        <sys_class_name>sysrule_view_workspace</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 09:16:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9fc5428a97cab5506692df14a253afdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Breach View Rule User</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sysrule_view_workspace_9fc5428a97cab5506692df14a253afdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 09:16:21</sys_updated_on>
+        <table>x_snc_gdpr_viola_0_breach</table>
+        <tabs_order>[{"label":"Details","value":"Details"}]</tabs_order>
+        <view display_value="Workspace GDPR Violation User" name="Workspace_GDPR_Violation_User">61128a0697cab5506692df14a253afe6</view>
+        <workspace/>
+    </sysrule_view_workspace>
+</record_update>

@@ -1,0 +1,3487 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=9172685000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Flow to trigger when new breach is reported</description>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>breach_incident_created</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Breach Record","reference":"x_snc_gdpr_viola_0_breach","reference_display":"Breach","type":"reference","base_type":"reference","usedInstances":{"0fecdccd-6149-41a5-9afb-51af21e1acc0":[null]},"attributes":{}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Breach Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.opened_by.manager.first_name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Manager➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.opened_by.first_name","label":"Trigger - Record Created➛Breach Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.opened_by.last_name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Breach Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","usedInstances":{}},{"name":"flow_variable.url","label":"Flow Variables➛URL","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","usedInstances":{}},{"name":"flow_variable.url2","label":"Flow Variables➛URL2","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{}},{"name":"d5317986-05ed-4914-99f7-5e7a01dd0a5f.approval_state","label":"7 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager.name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"0fecdccd-6149-41a5-9afb-51af21e1acc0":["undefined",null]}}]</label_cache>
+        <master_snapshot>321ec2b1970a7550e110be4e6253af84</master_snapshot>
+        <name>Breach Incident Created</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>8b1ec2b1970a7550e110be4e6253aff6</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 12:31:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3649a5bd97467550e110be4e6253af64</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_name>Breach Incident Created</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sys_hub_flow_3649a5bd97467550e110be4e6253af64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3649a5bd97467550e110be4e6253af64"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3649a5bd97467550e110be4e6253af64"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_gdpr_viola_0_breach">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8b1ec2b1970a7550e110be4e6253aff6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:12:21</sys_updated_on>
+        <table>x_snc_gdpr_viola_0_breach</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>3649a5bd97467550e110be4e6253af64</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:40</sys_created_on>
+        <sys_id>da9a044847148e50e5bcb098436d4399</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:40</sys_updated_on>
+        <trigger display_value="">8b1ec2b1970a7550e110be4e6253aff6</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=3649a5bd97467550e110be4e6253af64^sys_idNOT INda9a044847148e50e5bcb098436d4399"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3649a5bd97467550e110be4e6253af64^sys_idNOT IN235bbdfd97867550e110be4e6253af9c"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 13:50:28</sys_created_on>
+        <sys_id>235bbdfd97867550e110be4e6253af9c</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=235bbdfd97867550e110be4e6253af9c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>235bbdfd97867550e110be4e6253af9c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 13:50:28</sys_created_on>
+        <sys_id>735bbdfd97867550e110be4e6253af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 13:50:28</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>235bbdfd97867550e110be4e6253af9c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 13:50:28</sys_created_on>
+        <sys_id>bb5bbdfd97867550e110be4e6253af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 13:50:28</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3649a5bd97467550e110be4e6253af64"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3649a5bd97467550e110be4e6253af64^sys_idNOT INf249a5bd97467550e110be4e6253af67"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3649a5bd97467550e110be4e6253af64</id>
+        <name>Breach Incident Created</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 12:31:30</sys_created_on>
+        <sys_id>f249a5bd97467550e110be4e6253af67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 12:31:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f249a5bd97467550e110be4e6253af67"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3649a5bd97467550e110be4e6253af64^sys_idNOT IN2f5bf9bd97867550e110be4e6253afe7,ab5bbdfd97867550e110be4e6253af97"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</model>
+        <model_id>3649a5bd97467550e110be4e6253af64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3649a5bd97467550e110be4e6253af64</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 13:50:28</sys_created_on>
+        <sys_id>2f5bf9bd97867550e110be4e6253afe7</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2f5bf9bd97867550e110be4e6253afe7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</model>
+        <model_id>3649a5bd97467550e110be4e6253af64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3649a5bd97467550e110be4e6253af64</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 13:50:28</sys_created_on>
+        <sys_id>ab5bbdfd97867550e110be4e6253af97</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ab5bbdfd97867550e110be4e6253af97"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3649a5bd97467550e110be4e6253af64"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3649a5bd97467550e110be4e6253af64"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3649a5bd97467550e110be4e6253af64^sys_idNOT IN60eef24e97ceb5506692df14a253affa,8cbc6286978eb5506692df14a253af19,94b00e8297cab5506692df14a253af95,961630f297ca79506692df14a253af58,9e1630f297ca79506692df14a253af5e,a7a2764e978eb5506692df14a253afdd,c8310ac297cab5506692df14a253af2f,e050828297cab5506692df14a253af78"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send email to Chief Digital Officer</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:55</sys_created_on>
+        <sys_id>60eef24e97ceb5506692df14a253affa</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>0fecdccd-6149-41a5-9afb-51af21e1acc0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60eef24e97ceb5506692df14a253affa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60eef24e97ceb5506692df14a253affa</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>60eef24e97ceb5506692df14a253affe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <value>New GDPR Breach needs your immediate attention</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60eef24e97ceb5506692df14a253affa</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>aceef24e97ceb5506692df14a253affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60eef24e97ceb5506692df14a253affa</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>e0eef24e97ceb5506692df14a253affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <value>Chris Harris &lt;jasper.miller@servicenow.com&gt;</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60eef24e97ceb5506692df14a253affa</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>e8eef24e97ceb5506692df14a253affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60eef24e97ceb5506692df14a253affa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>60eef24e97ceb5506692df14a253affa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>28eef24e97ceb5506692df14a253affc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear Chris Harris,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;A possible GDPR violation or breach has been reported by&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:5a038ef0-819e-48b8-b6e6-f9fa1c50d988}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:5a038ef0-819e-48b8-b6e6-f9fa1c50d988}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Created &amp;gt; Breach Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_5a038ef0-819e-48b8-b6e6-f9fa1c50d988" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and&amp;nbsp;reviewed by his/her manager&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:ac635882-acba-4344-bcc8-f01018454012}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:ac635882-acba-4344-bcc8-f01018454012}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Created &amp;gt; Breach Record &amp;gt; Opened by &amp;gt; Manager &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_ac635882-acba-4344-bcc8-f01018454012" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;It is crucial that you assign the incident and ensure, if required, that the incident is reported to Datatilsynet within 72 hours. The clock is ticking!&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;To rewiew the breach, click here&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:9fe8773d-7c84-4f57-925c-72ae5a1dabd4}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:9fe8773d-7c84-4f57-925c-72ae5a1dabd4}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Flow Variables &amp;gt; URL2"&gt;&lt;span class="pill-start"&gt;Flow Variables&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;URL2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_9fe8773d-7c84-4f57-925c-72ae5a1dabd4" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Warm regards,&lt;br /&gt;ACME Inc.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>60eef24e97ceb5506692df14a253affa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>60eef24e97ceb5506692df14a253affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>60eef24e97ceb5506692df14a253affa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>64eef24e97ceb5506692df14a253affc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>60eef24e97ceb5506692df14a253affa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>e8eef24e97ceb5506692df14a253affc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>60eef24e97ceb5506692df14a253affa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>aceef24e97ceb5506692df14a253affc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60eef24e97ceb5506692df14a253affa^sys_idNOT INea8a004847148e50e5bcb098436d43af"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_body</input_name>
+        <instance>60eef24e97ceb5506692df14a253affa</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_body":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:25</sys_created_on>
+        <sys_id>ea8a004847148e50e5bcb098436d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:25</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60eef24e97ceb5506692df14a253affa"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Send email to reporter/user that incident is received</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:04:26</sys_created_on>
+        <sys_id>8cbc6286978eb5506692df14a253af19</sys_id>
+        <sys_mod_count>70</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>9da1af68-ebc3-47de-a474-974161ddb389</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8cbc6286978eb5506692df14a253af19"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8cbc6286978eb5506692df14a253af19</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:04:26</sys_created_on>
+        <sys_id>44bc6286978eb5506692df14a253af1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:04:26</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8cbc6286978eb5506692df14a253af19</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:04:26</sys_created_on>
+        <sys_id>4cbc6286978eb5506692df14a253af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:04:26</sys_updated_on>
+        <value>9fec5d7197467550e110be4e6253af7e</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8cbc6286978eb5506692df14a253af19"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>8cbc6286978eb5506692df14a253af19</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:04:26</sys_created_on>
+        <sys_id>40bc6286978eb5506692df14a253af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:04:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8cbc6286978eb5506692df14a253af19</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:04:26</sys_created_on>
+        <sys_id>c8bc6286978eb5506692df14a253af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:04:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8cbc6286978eb5506692df14a253af19</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:04:26</sys_created_on>
+        <sys_id>08bc6286978eb5506692df14a253af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:04:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8cbc6286978eb5506692df14a253af19"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8cbc6286978eb5506692df14a253af19"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set approval to requested</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:13</sys_created_on>
+        <sys_id>94b00e8297cab5506692df14a253af95</sys_id>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>f50df818-20dc-4ae4-a5be-716cd3bad628</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=94b00e8297cab5506692df14a253af95"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>94b00e8297cab5506692df14a253af95</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:13</sys_created_on>
+        <sys_id>90b00e8297cab5506692df14a253af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:13</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>94b00e8297cab5506692df14a253af95</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:13</sys_created_on>
+        <sys_id>d8b00e8297cab5506692df14a253af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:13</sys_updated_on>
+        <value>approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=94b00e8297cab5506692df14a253af95"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>94b00e8297cab5506692df14a253af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:13</sys_created_on>
+        <sys_id>58b00e8297cab5506692df14a253af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>94b00e8297cab5506692df14a253af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:13</sys_created_on>
+        <sys_id>dcb00e8297cab5506692df14a253af96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>94b00e8297cab5506692df14a253af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:13</sys_created_on>
+        <sys_id>94b00e8297cab5506692df14a253af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=94b00e8297cab5506692df14a253af95"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=94b00e8297cab5506692df14a253af95"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set approval to approved</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>cfddffc6-a3ca-4489-91b5-58e886d04b7b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>961630f297ca79506692df14a253af58</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>5e26202b-bb04-4316-809d-6cc5e08ed9a1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=961630f297ca79506692df14a253af58"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>961630f297ca79506692df14a253af58</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>9a1630f297ca79506692df14a253af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>961630f297ca79506692df14a253af58</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>d61630f297ca79506692df14a253af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <value>approval=approved</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=961630f297ca79506692df14a253af58"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>961630f297ca79506692df14a253af58</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>561630f297ca79506692df14a253af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>961630f297ca79506692df14a253af58</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>de1630f297ca79506692df14a253af59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>961630f297ca79506692df14a253af58</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>921630f297ca79506692df14a253af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=961630f297ca79506692df14a253af58"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=961630f297ca79506692df14a253af58"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set state to open and assign to CDO Chris Harris</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>cfddffc6-a3ca-4489-91b5-58e886d04b7b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>9e1630f297ca79506692df14a253af5e</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>b040c29d-7459-413b-974e-febb272e254b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9e1630f297ca79506692df14a253af5e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9e1630f297ca79506692df14a253af5e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>9a1630f297ca79506692df14a253af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9e1630f297ca79506692df14a253af5e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>d61630f297ca79506692df14a253af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <value>state=1^assigned_to={"display":"Chris Harris","value":"b0f31e5673500010c2e7660c4cf6a711","table":"sys_user","sys_id":"b0f31e5673500010c2e7660c4cf6a711"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9e1630f297ca79506692df14a253af5e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9e1630f297ca79506692df14a253af5e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>561630f297ca79506692df14a253af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9e1630f297ca79506692df14a253af5e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>de1630f297ca79506692df14a253af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>9e1630f297ca79506692df14a253af5e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>921630f297ca79506692df14a253af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9e1630f297ca79506692df14a253af5e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9e1630f297ca79506692df14a253af5e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>a7a2764e978eb5506692df14a253afdd</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>d5317986-05ed-4914-99f7-5e7a01dd0a5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a7a2764e978eb5506692df14a253afdd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a7a2764e978eb5506692df14a253afdd</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>2fa2764e978eb5506692df14a253afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a7a2764e978eb5506692df14a253afdd</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>6ba2764e978eb5506692df14a253afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a7a2764e978eb5506692df14a253afdd</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>a3a2764e978eb5506692df14a253afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a7a2764e978eb5506692df14a253afdd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>efa2764e978eb5506692df14a253afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a7a2764e978eb5506692df14a253afdd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>a7a2764e978eb5506692df14a253afdd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>6fa2764e978eb5506692df14a253afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>a7a2764e978eb5506692df14a253afdd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>6fa2764e978eb5506692df14a253afdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>a7a2764e978eb5506692df14a253afdd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>aba2764e978eb5506692df14a253afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>a7a2764e978eb5506692df14a253afdd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>27a2764e978eb5506692df14a253afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a7a2764e978eb5506692df14a253afdd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>e7a2764e978eb5506692df14a253afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>a7a2764e978eb5506692df14a253afdd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:30:36</sys_created_on>
+        <sys_id>23a2764e978eb5506692df14a253afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:30:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a7a2764e978eb5506692df14a253afdd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a7a2764e978eb5506692df14a253afdd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set record state to pending (wait for "approval")</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:23</sys_created_on>
+        <sys_id>c8310ac297cab5506692df14a253af2f</sys_id>
+        <sys_mod_count>74</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>07f5bfc1-3b4e-48cf-a11c-9c4c8d8cd97f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c8310ac297cab5506692df14a253af2f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c8310ac297cab5506692df14a253af2f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:23</sys_created_on>
+        <sys_id>00310ac297cab5506692df14a253af32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:23</sys_updated_on>
+        <value>state=-5</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c8310ac297cab5506692df14a253af2f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:23</sys_created_on>
+        <sys_id>c4310ac297cab5506692df14a253af32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:23</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c8310ac297cab5506692df14a253af2f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c8310ac297cab5506692df14a253af2f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:23</sys_created_on>
+        <sys_id>8c310ac297cab5506692df14a253af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c8310ac297cab5506692df14a253af2f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:23</sys_created_on>
+        <sys_id>04310ac297cab5506692df14a253af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c8310ac297cab5506692df14a253af2f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:23</sys_created_on>
+        <sys_id>c8310ac297cab5506692df14a253af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c8310ac297cab5506692df14a253af2f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c8310ac297cab5506692df14a253af2f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Add work note for reporter</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:35</sys_created_on>
+        <sys_id>e050828297cab5506692df14a253af78</sys_id>
+        <sys_mod_count>82</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>62491f3b-93b1-477c-897e-67aa32c827bd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e050828297cab5506692df14a253af78"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e050828297cab5506692df14a253af78</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:35</sys_created_on>
+        <sys_id>2850828297cab5506692df14a253af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:35</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e050828297cab5506692df14a253af78</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:35</sys_created_on>
+        <sys_id>6050828297cab5506692df14a253af7b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:53:26</sys_updated_on>
+        <value>comments=Thank you for reporting a possible GDPR breach. We will be in touch by email if we require further information.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e050828297cab5506692df14a253af78"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e050828297cab5506692df14a253af78</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:35</sys_created_on>
+        <sys_id>ec50828297cab5506692df14a253af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e050828297cab5506692df14a253af78</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:35</sys_created_on>
+        <sys_id>6450828297cab5506692df14a253af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e050828297cab5506692df14a253af78</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:35</sys_created_on>
+        <sys_id>2c50828297cab5506692df14a253af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e050828297cab5506692df14a253af78"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e050828297cab5506692df14a253af78"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3649a5bd97467550e110be4e6253af64"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3649a5bd97467550e110be4e6253af64^sys_idNOT IN473ef5ce978ab5506692df14a253afd0,921630f297ca79506692df14a253af50,a4eef24e97ceb5506692df14a253afe9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b3ef5ce978ab5506692df14a253afcf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>url</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:29</sys_created_on>
+        <sys_id>473ef5ce978ab5506692df14a253afd0</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>107c4ca1-6c8b-41d7-9fc4-1068493e1c9a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=473ef5ce978ab5506692df14a253afd0"/>
+    <sys_element_mapping action="delete_multiple" query="id=473ef5ce978ab5506692df14a253afd0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>url</field>
+        <id>473ef5ce978ab5506692df14a253afd0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:29</sys_created_on>
+        <sys_id>0f3ef5ce978ab5506692df14a253afd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-27 11:46:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_3649a5bd97467550e110be4e6253af64</table>
+        <value>https://jcmdev.service-now.com/now/gdpr-violation/record/x_snc_gdpr_viola_0_breach/{{Created_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=473ef5ce978ab5506692df14a253afd0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=473ef5ce978ab5506692df14a253afd0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d61630f297ca79506692df14a253af4f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>921630f297ca79506692df14a253af50</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>cfddffc6-a3ca-4489-91b5-58e886d04b7b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=921630f297ca79506692df14a253af50"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>921630f297ca79506692df14a253af50</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>5e1630f297ca79506692df14a253af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_3649a5bd97467550e110be4e6253af64^id=921630f297ca79506692df14a253af50"/>
+    <sys_element_mapping action="delete_multiple" query="id=921630f297ca79506692df14a253af50"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>921630f297ca79506692df14a253af50</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>da1630f297ca79506692df14a253af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d5317986-05ed-4914-99f7-5e7a01dd0a5f.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>921630f297ca79506692df14a253af50</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:21:45</sys_created_on>
+        <sys_id>161630f297ca79506692df14a253af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:21:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=921630f297ca79506692df14a253af50"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=921630f297ca79506692df14a253af50"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e8eef24e97ceb5506692df14a253afe8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>url2</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:55</sys_created_on>
+        <sys_id>a4eef24e97ceb5506692df14a253afe9</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <ui_id>2a53570d-1bb9-425f-beb5-c26fbe83dd45</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a4eef24e97ceb5506692df14a253afe9"/>
+    <sys_element_mapping action="delete_multiple" query="id=a4eef24e97ceb5506692df14a253afe9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>url2</field>
+        <id>a4eef24e97ceb5506692df14a253afe9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:55</sys_created_on>
+        <sys_id>20eef24e97ceb5506692df14a253afec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-27 11:46:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_3649a5bd97467550e110be4e6253af64</table>
+        <value>https://jcmdev.service-now.com/now/gdpr-violation/record/x_snc_gdpr_viola_0_breach/{{Created_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a4eef24e97ceb5506692df14a253afe9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a4eef24e97ceb5506692df14a253afe9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3649a5bd97467550e110be4e6253af64^sys_idNOT IN0f3ef5ce978ab5506692df14a253afd9,60ee364e97ceb5506692df14a253af01,7256163197ca75506692df14a253af23,aa8a004847148e50e5bcb098436d43b4,acee364e97ceb5506692df14a253af00,b656163197ca75506692df14a253af22,be56163197ca75506692df14a253af22,c33ef5ce978ab5506692df14a253afda,e4ee364e97ceb5506692df14a253af00,e68a004847148e50e5bcb098436d43b4,ee8a004847148e50e5bcb098436d43b3"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:29</sys_created_on>
+        <sys_id>0f3ef5ce978ab5506692df14a253afd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:41:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>42b62be6-1805-4f43-8cd2-dc9d9704df76</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.url2}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>60ee364e97ceb5506692df14a253af01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9fe8773d-7c84-4f57-925c-72ae5a1dabd4</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:48:23</sys_created_on>
+        <sys_id>7256163197ca75506692df14a253af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:48:23</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>58e629fe-6274-4da2-849d-0132930e51cf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:25</sys_created_on>
+        <sys_id>aa8a004847148e50e5bcb098436d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ac635882-acba-4344-bcc8-f01018454012</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>acee364e97ceb5506692df14a253af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>61e6ce98-663d-46a8-b7c5-ecc4b2a044f0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:48:23</sys_created_on>
+        <sys_id>b656163197ca75506692df14a253af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:48:23</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>98760fe0-b8e5-4cc6-b533-927246ab538c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:48:23</sys_created_on>
+        <sys_id>be56163197ca75506692df14a253af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:48:23</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dd15ef23-c315-4a09-ba21-059b06b06f51</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.url}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:29</sys_created_on>
+        <sys_id>c33ef5ce978ab5506692df14a253afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:41:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>99a99e2b-8bdc-4d65-9e39-e371497739d7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:56</sys_created_on>
+        <sys_id>e4ee364e97ceb5506692df14a253af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5a038ef0-819e-48b8-b6e6-f9fa1c50d988</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:25</sys_created_on>
+        <sys_id>e68a004847148e50e5bcb098436d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0723d99b-c7e0-44f5-bb76-2c19e0f3d5b6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>3649a5bd97467550e110be4e6253af64</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:25</sys_created_on>
+        <sys_id>ee8a004847148e50e5bcb098436d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8f7e9c33-4c48-468a-8eef-eec044389047</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3649a5bd97467550e110be4e6253af64^sys_idNOT IN0f3ef5ce978ab5506692df14a253afc9,24eef24e97ceb5506692df14a253afb8"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=863d72a7-b0c2-4215-a1a4-77ef73b73153</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>URL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</model>
+        <model_id>3649a5bd97467550e110be4e6253af64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_3649a5bd97467550e110be4e6253af64</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:28</sys_created_on>
+        <sys_id>0f3ef5ce978ab5506692df14a253afc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:41:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4edbb2fb-5f62-4547-91c6-f0d3e1654758</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>url2</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>URL2</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</model>
+        <model_id>3649a5bd97467550e110be4e6253af64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_3649a5bd97467550e110be4e6253af64</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:23:55</sys_created_on>
+        <sys_id>24eef24e97ceb5506692df14a253afb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:23:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3649a5bd97467550e110be4e6253af64^sys_idNOT IN275bbdfd97867550e110be4e6253af96,2f5bbdfd97867550e110be4e6253af99"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3649a5bd97467550e110be4e6253af64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 13:50:28</sys_created_on>
+        <sys_id>275bbdfd97867550e110be4e6253af96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 13:50:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3649a5bd97467550e110be4e6253af64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 13:50:28</sys_created_on>
+        <sys_id>2f5bbdfd97867550e110be4e6253af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 13:50:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3649a5bd97467550e110be4e6253af64"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3649a5bd97467550e110be4e6253af64"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3649a5bd97467550e110be4e6253af64"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Flow to trigger when new breach is reported</description>
+        <flow_priority/>
+        <internal_name>breach_incident_created</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Breach Record","reference":"x_snc_gdpr_viola_0_breach","reference_display":"Breach","type":"reference","base_type":"reference","usedInstances":{"0fecdccd-6149-41a5-9afb-51af21e1acc0":[null]},"attributes":{}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Breach Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.opened_by.manager.first_name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Manager➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.opened_by.first_name","label":"Trigger - Record Created➛Breach Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.opened_by.last_name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Breach Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","usedInstances":{}},{"name":"flow_variable.url","label":"Flow Variables➛URL","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","usedInstances":{}},{"name":"flow_variable.url2","label":"Flow Variables➛URL2","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{}},{"name":"d5317986-05ed-4914-99f7-5e7a01dd0a5f.approval_state","label":"7 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager.name","label":"Trigger - Record Created➛Breach Record➛Opened by➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"0fecdccd-6149-41a5-9afb-51af21e1acc0":["undefined",null]}}]</label_cache>
+        <master>true</master>
+        <name>Breach Incident Created</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Breach Incident Created">3649a5bd97467550e110be4e6253af64</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>321ec2b1970a7550e110be4e6253af84</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=321ec2b1970a7550e110be4e6253af84"/>
+    <sys_variable_value action="delete_multiple" query="document_key=321ec2b1970a7550e110be4e6253af84"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=321ec2b1970a7550e110be4e6253af84^sys_idNOT IN831ec2b1970a7550e110be4e6253afe7"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:21</sys_created_on>
+        <sys_id>831ec2b1970a7550e110be4e6253afe7</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:41</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=831ec2b1970a7550e110be4e6253afe7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>831ec2b1970a7550e110be4e6253afe7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:21</sys_created_on>
+        <sys_id>8f1ec2b1970a7550e110be4e6253afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:12:21</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>831ec2b1970a7550e110be4e6253afe7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:21</sys_created_on>
+        <sys_id>cb1ec2b1970a7550e110be4e6253afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:12:21</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=321ec2b1970a7550e110be4e6253af84"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=321ec2b1970a7550e110be4e6253af84^sys_idNOT INb21ec2b1970a7550e110be4e6253af85"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>321ec2b1970a7550e110be4e6253af84</id>
+        <name>Breach Incident Created</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:20</sys_created_on>
+        <sys_id>b21ec2b1970a7550e110be4e6253af85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:12:20</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b21ec2b1970a7550e110be4e6253af85"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=321ec2b1970a7550e110be4e6253af84^sys_idNOT IN361ec2b1970a7550e110be4e6253afd1,b61ec2b1970a7550e110be4e6253af86"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</model>
+        <model_id>321ec2b1970a7550e110be4e6253af84</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_321ec2b1970a7550e110be4e6253af84</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:20</sys_created_on>
+        <sys_id>361ec2b1970a7550e110be4e6253afd1</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=361ec2b1970a7550e110be4e6253afd1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</model>
+        <model_id>321ec2b1970a7550e110be4e6253af84</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_321ec2b1970a7550e110be4e6253af84</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:20</sys_created_on>
+        <sys_id>b61ec2b1970a7550e110be4e6253af86</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b61ec2b1970a7550e110be4e6253af86"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=321ec2b1970a7550e110be4e6253af84"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=321ec2b1970a7550e110be4e6253af84"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=321ec2b1970a7550e110be4e6253af84^sys_idNOT IN0550c28297cab5506692df14a253af12,12d33e8e978eb5506692df14a253afd3,28314ac297cab5506692df14a253af0d,36eeb64e97ceb5506692df14a253afa4,722634f297ca79506692df14a253af53,9ad33e8e978eb5506692df14a253afc9,b22634f297ca79506692df14a253af4d,f0b04e8297cab5506692df14a253af5d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Add work note for reporter</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:37</sys_created_on>
+        <sys_id>0550c28297cab5506692df14a253af12</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <ui_id>62491f3b-93b1-477c-897e-67aa32c827bd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0550c28297cab5506692df14a253af12"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0550c28297cab5506692df14a253af12</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:37</sys_created_on>
+        <sys_id>0150c28297cab5506692df14a253af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:37</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0550c28297cab5506692df14a253af12</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:37</sys_created_on>
+        <sys_id>4d50c28297cab5506692df14a253af13</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:53:33</sys_updated_on>
+        <value>comments=Thank you for reporting a possible GDPR breach. We will be in touch by email if we require further information.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0550c28297cab5506692df14a253af12"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0550c28297cab5506692df14a253af12</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:37</sys_created_on>
+        <sys_id>c950c28297cab5506692df14a253af13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0550c28297cab5506692df14a253af12</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:37</sys_created_on>
+        <sys_id>4550c28297cab5506692df14a253af13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0550c28297cab5506692df14a253af12</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:50:37</sys_created_on>
+        <sys_id>0950c28297cab5506692df14a253af13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:50:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0550c28297cab5506692df14a253af12"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0550c28297cab5506692df14a253af12"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment>Send email to reporter/user that incident is received</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>12d33e8e978eb5506692df14a253afd3</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <ui_id>9da1af68-ebc3-47de-a474-974161ddb389</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=12d33e8e978eb5506692df14a253afd3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12d33e8e978eb5506692df14a253afd3</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:43</sys_created_on>
+        <sys_id>12d33e8e978eb5506692df14a253afd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:43</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12d33e8e978eb5506692df14a253afd3</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:43</sys_created_on>
+        <sys_id>5ed33e8e978eb5506692df14a253afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:43</sys_updated_on>
+        <value>9fec5d7197467550e110be4e6253af7e</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=12d33e8e978eb5506692df14a253afd3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>12d33e8e978eb5506692df14a253afd3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:43</sys_created_on>
+        <sys_id>56d33e8e978eb5506692df14a253afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>12d33e8e978eb5506692df14a253afd3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:43</sys_created_on>
+        <sys_id>dad33e8e978eb5506692df14a253afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>12d33e8e978eb5506692df14a253afd3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:43</sys_created_on>
+        <sys_id>1ad33e8e978eb5506692df14a253afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=12d33e8e978eb5506692df14a253afd3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=12d33e8e978eb5506692df14a253afd3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set record state to pending (wait for "approval")</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:25</sys_created_on>
+        <sys_id>28314ac297cab5506692df14a253af0d</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <ui_id>07f5bfc1-3b4e-48cf-a11c-9c4c8d8cd97f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28314ac297cab5506692df14a253af0d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28314ac297cab5506692df14a253af0d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:25</sys_created_on>
+        <sys_id>24314ac297cab5506692df14a253af0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:25</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28314ac297cab5506692df14a253af0d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:25</sys_created_on>
+        <sys_id>60314ac297cab5506692df14a253af0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:25</sys_updated_on>
+        <value>state=-5</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28314ac297cab5506692df14a253af0d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>28314ac297cab5506692df14a253af0d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:25</sys_created_on>
+        <sys_id>ec314ac297cab5506692df14a253af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>28314ac297cab5506692df14a253af0d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:25</sys_created_on>
+        <sys_id>68314ac297cab5506692df14a253af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>28314ac297cab5506692df14a253af0d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:54:25</sys_created_on>
+        <sys_id>2c314ac297cab5506692df14a253af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:54:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28314ac297cab5506692df14a253af0d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28314ac297cab5506692df14a253af0d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send email to Chief Digital Officer</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>36eeb64e97ceb5506692df14a253afa4</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <ui_id>0fecdccd-6149-41a5-9afb-51af21e1acc0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=36eeb64e97ceb5506692df14a253afa4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>36eeb64e97ceb5506692df14a253afa4</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>32eeb64e97ceb5506692df14a253afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>36eeb64e97ceb5506692df14a253afa4</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>7eeeb64e97ceb5506692df14a253afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <value>Chris Harris &lt;jasper.miller@servicenow.com&gt;</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>36eeb64e97ceb5506692df14a253afa4</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>b6eeb64e97ceb5506692df14a253afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <value>New GDPR Breach needs your immediate attention</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>36eeb64e97ceb5506692df14a253afa4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>f2eeb64e97ceb5506692df14a253afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=36eeb64e97ceb5506692df14a253afa4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>36eeb64e97ceb5506692df14a253afa4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>b2eeb64e97ceb5506692df14a253afa6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear Chris Harris,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;A possible GDPR violation or breach has been reported by&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:5a038ef0-819e-48b8-b6e6-f9fa1c50d988}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:5a038ef0-819e-48b8-b6e6-f9fa1c50d988}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Created &amp;gt; Breach Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_5a038ef0-819e-48b8-b6e6-f9fa1c50d988" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and&amp;nbsp;reviewed by his/her manager&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:ac635882-acba-4344-bcc8-f01018454012}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:ac635882-acba-4344-bcc8-f01018454012}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Created &amp;gt; Breach Record &amp;gt; Opened by &amp;gt; Manager &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_ac635882-acba-4344-bcc8-f01018454012" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;It is crucial that you assign the incident and ensure, if required, that the incident is reported to Datatilsynet within 72 hours. The clock is ticking!&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;To rewiew the breach, click here&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:9fe8773d-7c84-4f57-925c-72ae5a1dabd4}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:9fe8773d-7c84-4f57-925c-72ae5a1dabd4}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Flow Variables &amp;gt; URL2"&gt;&lt;span class="pill-start"&gt;Flow Variables&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;URL2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_9fe8773d-7c84-4f57-925c-72ae5a1dabd4" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Warm regards,&lt;br /&gt;ACME Inc.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>36eeb64e97ceb5506692df14a253afa4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>faeeb64e97ceb5506692df14a253afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>36eeb64e97ceb5506692df14a253afa4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>feeeb64e97ceb5506692df14a253afa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>36eeb64e97ceb5506692df14a253afa4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>76eeb64e97ceb5506692df14a253afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>36eeb64e97ceb5506692df14a253afa4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>3aeeb64e97ceb5506692df14a253afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=36eeb64e97ceb5506692df14a253afa4^sys_idNOT IN799ac04847148e50e5bcb098436d43cb"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_body</input_name>
+        <instance>36eeb64e97ceb5506692df14a253afa4</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_body":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:38</sys_created_on>
+        <sys_id>799ac04847148e50e5bcb098436d43cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=36eeb64e97ceb5506692df14a253afa4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set state to open and assign to CDO Chris Harris</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>cfddffc6-a3ca-4489-91b5-58e886d04b7b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>722634f297ca79506692df14a253af53</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <ui_id>b040c29d-7459-413b-974e-febb272e254b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=722634f297ca79506692df14a253af53"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>722634f297ca79506692df14a253af53</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>7e2634f297ca79506692df14a253af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>722634f297ca79506692df14a253af53</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>ba2634f297ca79506692df14a253af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <value>state=1^assigned_to={"display":"Chris Harris","value":"b0f31e5673500010c2e7660c4cf6a711","table":"sys_user","sys_id":"b0f31e5673500010c2e7660c4cf6a711"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=722634f297ca79506692df14a253af53"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>722634f297ca79506692df14a253af53</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>3a2634f297ca79506692df14a253af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>722634f297ca79506692df14a253af53</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>b22634f297ca79506692df14a253af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>722634f297ca79506692df14a253af53</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>762634f297ca79506692df14a253af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=722634f297ca79506692df14a253af53"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=722634f297ca79506692df14a253af53"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>9ad33e8e978eb5506692df14a253afc9</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <ui_id>d5317986-05ed-4914-99f7-5e7a01dd0a5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ad33e8e978eb5506692df14a253afc9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9ad33e8e978eb5506692df14a253afc9</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>1ad33e8e978eb5506692df14a253afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9ad33e8e978eb5506692df14a253afc9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>56d33e8e978eb5506692df14a253afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9ad33e8e978eb5506692df14a253afc9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>9ed33e8e978eb5506692df14a253afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9ad33e8e978eb5506692df14a253afc9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>dad33e8e978eb5506692df14a253afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9ad33e8e978eb5506692df14a253afc9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>9ad33e8e978eb5506692df14a253afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>5ad33e8e978eb5506692df14a253afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>9ad33e8e978eb5506692df14a253afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>5ad33e8e978eb5506692df14a253afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>9ad33e8e978eb5506692df14a253afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>96d33e8e978eb5506692df14a253afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>9ad33e8e978eb5506692df14a253afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>12d33e8e978eb5506692df14a253afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9ad33e8e978eb5506692df14a253afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>d2d33e8e978eb5506692df14a253afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9ad33e8e978eb5506692df14a253afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 12:35:42</sys_created_on>
+        <sys_id>1ed33e8e978eb5506692df14a253afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 12:35:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ad33e8e978eb5506692df14a253afc9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9ad33e8e978eb5506692df14a253afc9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set approval to approved</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>cfddffc6-a3ca-4489-91b5-58e886d04b7b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>b22634f297ca79506692df14a253af4d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <ui_id>5e26202b-bb04-4316-809d-6cc5e08ed9a1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b22634f297ca79506692df14a253af4d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b22634f297ca79506692df14a253af4d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>be2634f297ca79506692df14a253af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b22634f297ca79506692df14a253af4d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>fa2634f297ca79506692df14a253af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <value>approval=approved</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b22634f297ca79506692df14a253af4d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b22634f297ca79506692df14a253af4d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>7a2634f297ca79506692df14a253af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b22634f297ca79506692df14a253af4d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>f22634f297ca79506692df14a253af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b22634f297ca79506692df14a253af4d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>b62634f297ca79506692df14a253af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b22634f297ca79506692df14a253af4d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b22634f297ca79506692df14a253af4d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set approval to requested</comment>
+        <display_text/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:15</sys_created_on>
+        <sys_id>f0b04e8297cab5506692df14a253af5d</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <ui_id>f50df818-20dc-4ae4-a5be-716cd3bad628</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f0b04e8297cab5506692df14a253af5d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0b04e8297cab5506692df14a253af5d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:15</sys_created_on>
+        <sys_id>3cb04e8297cab5506692df14a253af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:15</sys_updated_on>
+        <value>approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0b04e8297cab5506692df14a253af5d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:15</sys_created_on>
+        <sys_id>fcb04e8297cab5506692df14a253af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:15</sys_updated_on>
+        <value>x_snc_gdpr_viola_0_breach</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f0b04e8297cab5506692df14a253af5d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f0b04e8297cab5506692df14a253af5d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:15</sys_created_on>
+        <sys_id>b8b04e8297cab5506692df14a253af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f0b04e8297cab5506692df14a253af5d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:15</sys_created_on>
+        <sys_id>34b04e8297cab5506692df14a253af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>f0b04e8297cab5506692df14a253af5d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:52:15</sys_created_on>
+        <sys_id>f4b04e8297cab5506692df14a253af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:52:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f0b04e8297cab5506692df14a253af5d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f0b04e8297cab5506692df14a253af5d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=321ec2b1970a7550e110be4e6253af84"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=321ec2b1970a7550e110be4e6253af84^sys_idNOT IN07eeb64e97ceb5506692df14a253afb0,362634f297ca79506692df14a253af72,6f3e39ce978ab5506692df14a253af67"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e8eef24e97ceb5506692df14a253afe8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>url2</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>07eeb64e97ceb5506692df14a253afb0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <ui_id>2a53570d-1bb9-425f-beb5-c26fbe83dd45</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=07eeb64e97ceb5506692df14a253afb0"/>
+    <sys_element_mapping action="delete_multiple" query="id=07eeb64e97ceb5506692df14a253afb0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>url2</field>
+        <id>07eeb64e97ceb5506692df14a253afb0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>8feeb64e97ceb5506692df14a253afb2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-27 11:46:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_321ec2b1970a7550e110be4e6253af84</table>
+        <value>https://jcmdev.service-now.com/now/gdpr-violation/record/x_snc_gdpr_viola_0_breach/{{Created_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=07eeb64e97ceb5506692df14a253afb0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=07eeb64e97ceb5506692df14a253afb0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d61630f297ca79506692df14a253af4f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>362634f297ca79506692df14a253af72</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <ui_id>cfddffc6-a3ca-4489-91b5-58e886d04b7b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=362634f297ca79506692df14a253af72"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>362634f297ca79506692df14a253af72</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>7a2634f297ca79506692df14a253af75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_321ec2b1970a7550e110be4e6253af84^id=362634f297ca79506692df14a253af72"/>
+    <sys_element_mapping action="delete_multiple" query="id=362634f297ca79506692df14a253af72"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>362634f297ca79506692df14a253af72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>f62634f297ca79506692df14a253af75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d5317986-05ed-4914-99f7-5e7a01dd0a5f.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>362634f297ca79506692df14a253af72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-26 11:22:03</sys_created_on>
+        <sys_id>362634f297ca79506692df14a253af75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-26 11:22:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=362634f297ca79506692df14a253af72"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=362634f297ca79506692df14a253af72"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b3ef5ce978ab5506692df14a253afcf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>url</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:30</sys_created_on>
+        <sys_id>6f3e39ce978ab5506692df14a253af67</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:38</sys_updated_on>
+        <ui_id>107c4ca1-6c8b-41d7-9fc4-1068493e1c9a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6f3e39ce978ab5506692df14a253af67"/>
+    <sys_element_mapping action="delete_multiple" query="id=6f3e39ce978ab5506692df14a253af67"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>url</field>
+        <id>6f3e39ce978ab5506692df14a253af67</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:30</sys_created_on>
+        <sys_id>a73e39ce978ab5506692df14a253af6d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-27 11:46:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_321ec2b1970a7550e110be4e6253af84</table>
+        <value>https://jcmdev.service-now.com/now/gdpr-violation/record/x_snc_gdpr_viola_0_breach/{{Created_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6f3e39ce978ab5506692df14a253af67"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6f3e39ce978ab5506692df14a253af67"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=321ec2b1970a7550e110be4e6253af84^sys_idNOT IN03eeb64e97ceb5506692df14a253afd7,4beeb64e97ceb5506692df14a253afd7,4d686546974ab5506692df14a253aff2,719a044847148e50e5bcb098436d4308,7d9a044847148e50e5bcb098436d4307,89686546974ab5506692df14a253aff2,b59a044847148e50e5bcb098436d4308,c1686546974ab5506692df14a253aff2,c3eeb64e97ceb5506692df14a253afd7,eb3e39ce978ab5506692df14a253af90,ef3e39ce978ab5506692df14a253af90"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:06</sys_created_on>
+        <sys_id>03eeb64e97ceb5506692df14a253afd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>61e6ce98-663d-46a8-b7c5-ecc4b2a044f0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.url2}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:06</sys_created_on>
+        <sys_id>4beeb64e97ceb5506692df14a253afd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9fe8773d-7c84-4f57-925c-72ae5a1dabd4</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 07:06:02</sys_created_on>
+        <sys_id>4d686546974ab5506692df14a253aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 07:06:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>98760fe0-b8e5-4cc6-b533-927246ab538c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:39</sys_created_on>
+        <sys_id>719a044847148e50e5bcb098436d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ac635882-acba-4344-bcc8-f01018454012</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.manager.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:39</sys_created_on>
+        <sys_id>7d9a044847148e50e5bcb098436d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8f7e9c33-4c48-468a-8eef-eec044389047</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 07:06:02</sys_created_on>
+        <sys_id>89686546974ab5506692df14a253aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 07:06:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>58e629fe-6274-4da2-849d-0132930e51cf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 15:29:39</sys_created_on>
+        <sys_id>b59a044847148e50e5bcb098436d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0723d99b-c7e0-44f5-bb76-2c19e0f3d5b6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 07:06:02</sys_created_on>
+        <sys_id>c1686546974ab5506692df14a253aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 07:06:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dd15ef23-c315-4a09-ba21-059b06b06f51</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:06</sys_created_on>
+        <sys_id>c3eeb64e97ceb5506692df14a253afd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5a038ef0-819e-48b8-b6e6-f9fa1c50d988</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:31</sys_created_on>
+        <sys_id>eb3e39ce978ab5506692df14a253af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:41:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>42b62be6-1805-4f43-8cd2-dc9d9704df76</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>321ec2b1970a7550e110be4e6253af84</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.url}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:31</sys_created_on>
+        <sys_id>ef3e39ce978ab5506692df14a253af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:41:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>99a99e2b-8bdc-4d65-9e39-e371497739d7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=321ec2b1970a7550e110be4e6253af84^sys_idNOT IN1f3e39ce978ab5506692df14a253af59,beeeb64e97ceb5506692df14a253af7c"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=863d72a7-b0c2-4215-a1a4-77ef73b73153</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>URL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</model>
+        <model_id>321ec2b1970a7550e110be4e6253af84</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_321ec2b1970a7550e110be4e6253af84</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 08:41:30</sys_created_on>
+        <sys_id>1f3e39ce978ab5506692df14a253af59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 08:41:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4edbb2fb-5f62-4547-91c6-f0d3e1654758</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>url2</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>URL2</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Breach Incident Created">321ec2b1970a7550e110be4e6253af84</model>
+        <model_id>321ec2b1970a7550e110be4e6253af84</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_321ec2b1970a7550e110be4e6253af84</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:24:05</sys_created_on>
+        <sys_id>beeeb64e97ceb5506692df14a253af7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 13:24:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_321ec2b1970a7550e110be4e6253af84^sys_idNOT IN3a1ec2b1970a7550e110be4e6253afd5,fe1ec2b1970a7550e110be4e6253afc0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_321ec2b1970a7550e110be4e6253af84</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:20</sys_created_on>
+        <sys_id>3a1ec2b1970a7550e110be4e6253afd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:12:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_321ec2b1970a7550e110be4e6253af84</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:20</sys_created_on>
+        <sys_id>fe1ec2b1970a7550e110be4e6253afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-23 15:12:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_321ec2b1970a7550e110be4e6253af84"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_321ec2b1970a7550e110be4e6253af84"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_321ec2b1970a7550e110be4e6253af84"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3649a5bd97467550e110be4e6253af64</sys_id>
+        <latest_snapshot>321ec2b1970a7550e110be4e6253af84</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patchrtp-01-04-2024_01-04-2024_1120.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3649a5bd97467550e110be4e6253af64^sys_idNOT INcb1ec2b1970a7550e110be4e6253aff8"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"cb1ec2b1970a7550e110be4e6253aff8","name":"plan","plan_signature":null}}</plan>
+        <plan_id>3649a5bd97467550e110be4e6253af64</plan_id>
+        <snapshot>321ec2b1970a7550e110be4e6253af84</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-23 15:12:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cb1ec2b1970a7550e110be4e6253aff8</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 15:29:40</sys_updated_on>
+        <trigger display_value="">8b1ec2b1970a7550e110be4e6253aff6</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3649a5bd97467550e110be4e6253af64"/>
+</record_update>

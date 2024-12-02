@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="GDPR Violation">6201150847d6f110e5bcb098436d43fe</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"5ad568017d624072887e490609afd400","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"5ad568017d624072887e490609afd400"}],"goals":[{"name":"primary","trigger_id":"5ad568017d624072887e490609afd400","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for reaching out.\", vaContext.getRequesterLang())"},"id":"1f6b7b49353f4bc5b49df1d3f40e3a5f","name":"Start"},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"c1c6e05273604db49fb2b43b4fa3884d","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"0e128266c0294e84a8545b287ec2acd9","name":"Report?","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"79e7f0172e83450dad7fa0ad95786958","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Would you like to report a possible GDPR violation or data breach?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Report or not","branches":[{"type":"Branch","label":"No","expression":{"type":"Applicability","mode":"query","value":"report_=No"},"id":"5135a1958d5d41df9202298779bf2259","name":"No"},{"type":"Branch","label":"Yes","expression":{"type":"Applicability","mode":"query","value":"report_=Yes"},"id":"abedb8b083ba4998a9a448adbc4cf667","name":"Yes"}],"id":"7edac81c34c64a85a8788b918f45681a","goal_id":"primary"},{"type":"InputPrompt","variable_id":"8c5374faf7bd46618b7bac17ca5245b1","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please provide a brief and concise title or headline for this report\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"b0ebcd23ee7943a69d6eda2c9cd42f9e","name":"Title","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":"","description":""},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"0a41ae8ab3dd48d88bb83ca9c8cd3340","name":"Category","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"cb55ed0460504e678f63876aeef42830","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which category fits this violation the best?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"InputPrompt","variable_id":"afe9e6e5948146219202f9d1a9527447","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"How many individuals are affected by this violation?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"92b7140bcf9a4520829a4274cc121db4","name":"Involved persons","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"cfe4fca89cb34e32922a963429addf06","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"How many data records (per affected individual) have been compromised?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"9a9256ad52f34d36a894b15e56f08815","name":"Number of records","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"8e3c8ea6937949b98eb8b720e6bfd61d","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Have the involved individualt been informed of this incident?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"fed871eb434d4819b8e92b0462f131f4","name":"Notifed?","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"description":""},{"type":"InputPrompt","variable_id":"f95b6d8a62e14857a87b65852fad4c4d","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please provide a detailed description of the incident.\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"e59ef526527d44b9b5144a31e7f1cd80","name":"Description","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"60f99e6bdafb4b93b2aa404effb2c846","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"What do you think might be likely consequences from this leak?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"85dcbd54c013424189a198847a648ff5","name":"Consequences","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"16724d8256b644209572cc67b5e2c7a7","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which measures have been taken to avoid more incidents like this?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"34d019e4ffd64b39997980d5c39d06ec","name":"Measures taken","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":"","description":""},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"437128f791844955b8f20607750044d1","name":"Screenshot","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"3f8bcb7e865643ba852199e89ea947aa","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Do you have a screenshot or similar to attach to this report?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Screenshot or not","branches":[{"type":"Branch","label":"Yes","expression":{"type":"Applicability","mode":"query","value":"screenshot=Yes"},"id":"1cca9965c4964e3eb0cf2d0b163b2fcf","name":"Yes"},{"type":"Branch","label":"No","expression":{"type":"Applicability","mode":"query","value":"screenshot=No"},"id":"d01c931a9ab54beabf423bd95c736699","name":"No"}],"id":"62a75de039104138b869f184dc5f01c1","goal_id":"primary"},{"type":"InputPrompt","variable_id":"4d79f3ab154f4245bd853241c4118be1","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Plesae upload the screenshot (or other relevant file) now\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"62f13fd4add14075834dcaf8a1901346","name":"Upload","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"description":""},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"The GDPR breach has been registered and will be processed as soon as possible. Thank you!\", vaContext.getRequesterLang())"}],"id":"951d855b04be4499afa2f04f4ae072ee","name":"Thank you","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"secure":false},{"type":"CRUDAction","mode":"create","query":"category={{vaInputs.category}}^involved_persons={{vaInputs.involved_persons}}^likely_consequences={{vaInputs.consequences}}^measures_taken={{vaInputs.measures_taken}}^description={{vaInputs.description}}^opened_by={{vaInputs.user}}^persons_notified={{vaInputs.notifed_}}^title={{vaInputs.title}}^data_records={{vaInputs.number_of_records}}","variable_id":"d11affdbb71a469893586c394830ee02","id":"f51c8f4ccbe4426491ed71391103fa92","name":"Create GDPR Breach Record with Upload","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"attachments":[{"type":"String","mode":"data_pill","value":"{{vaInputs.upload}}"}]},{"type":"CRUDAction","mode":"create","query":"category={{vaInputs.category}}^likely_consequences={{vaInputs.consequences}}^data_records={{vaInputs.number_of_records}}^description={{vaInputs.description}}^involved_persons={{vaInputs.involved_persons}}^measures_taken={{vaInputs.measures_taken}}^persons_notified={{vaInputs.notifed_}}^opened_by={{vaInputs.user}}^title={{vaInputs.title}}","variable_id":"836aae32d8c444b6bb3245ed7d02b3a9","id":"73a1e43f071c47d3917f007c950f5836","name":"Create GDPR Breach Record No Upload","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"attachments":[{"type":"String","mode":"string","value":""}]}],"edges":[{"type":"Edge","source_node_id":"1f6b7b49353f4bc5b49df1d3f40e3a5f","target_node_id":"0e128266c0294e84a8545b287ec2acd9","id":"a51f5d0f4818422db4aea39ac29100fd"},{"type":"Edge","source_node_id":"0e128266c0294e84a8545b287ec2acd9","target_node_id":"7edac81c34c64a85a8788b918f45681a","id":"294f54027d48432ebe25b30be8c7d8b4"},{"type":"Edge","source_node_id":"7edac81c34c64a85a8788b918f45681a","target_node_id":"c1c6e05273604db49fb2b43b4fa3884d","branch_id":"5135a1958d5d41df9202298779bf2259","id":"f074723bb7d940a48cc83e17e8a7b7cd","name":"5135a1958d5d41df9202298779bf2259"},{"type":"Edge","source_node_id":"7edac81c34c64a85a8788b918f45681a","target_node_id":"b0ebcd23ee7943a69d6eda2c9cd42f9e","branch_id":"abedb8b083ba4998a9a448adbc4cf667","id":"f4fffc38655040cc89fcb5fe986eed25","name":"abedb8b083ba4998a9a448adbc4cf667"},{"type":"Edge","source_node_id":"b0ebcd23ee7943a69d6eda2c9cd42f9e","target_node_id":"0a41ae8ab3dd48d88bb83ca9c8cd3340","id":"d74d05fa95fb442793c1927c1c1b2cbe"},{"type":"Edge","source_node_id":"0a41ae8ab3dd48d88bb83ca9c8cd3340","target_node_id":"92b7140bcf9a4520829a4274cc121db4","id":"c2b7170aa6204e05bc32202f023c938c"},{"type":"Edge","source_node_id":"92b7140bcf9a4520829a4274cc121db4","target_node_id":"9a9256ad52f34d36a894b15e56f08815","id":"62d48d7c806d492eb0ccb7e9a29f9fed"},{"type":"Edge","source_node_id":"9a9256ad52f34d36a894b15e56f08815","target_node_id":"fed871eb434d4819b8e92b0462f131f4","id":"067730f9bd114033b8eeef35ad04e5aa"},{"type":"Edge","source_node_id":"fed871eb434d4819b8e92b0462f131f4","target_node_id":"e59ef526527d44b9b5144a31e7f1cd80","id":"afdb000f7d79430da47ecf33c53605da"},{"type":"Edge","source_node_id":"e59ef526527d44b9b5144a31e7f1cd80","target_node_id":"85dcbd54c013424189a198847a648ff5","id":"f848a61ac2db435a847a7c6f31f61e71"},{"type":"Edge","source_node_id":"85dcbd54c013424189a198847a648ff5","target_node_id":"34d019e4ffd64b39997980d5c39d06ec","id":"83d0d2bf1a6a4ede9b915ccb5e7c73fd"},{"type":"Edge","source_node_id":"34d019e4ffd64b39997980d5c39d06ec","target_node_id":"437128f791844955b8f20607750044d1","id":"efd7f51807a4450cb8ad8fbdaa24408d"},{"type":"Edge","source_node_id":"437128f791844955b8f20607750044d1","target_node_id":"62a75de039104138b869f184dc5f01c1","id":"a1821c2ad6a0440eb3838ce4336f7d21"},{"type":"Edge","source_node_id":"62a75de039104138b869f184dc5f01c1","target_node_id":"62f13fd4add14075834dcaf8a1901346","branch_id":"1cca9965c4964e3eb0cf2d0b163b2fcf","id":"d840b0cc6a1948598f9a708839fd412e","name":"1cca9965c4964e3eb0cf2d0b163b2fcf"},{"type":"Edge","source_node_id":"951d855b04be4499afa2f04f4ae072ee","target_node_id":"c1c6e05273604db49fb2b43b4fa3884d","id":"34bfd2b6cd56491a8d6a6ec878941da3"},{"type":"Edge","source_node_id":"62f13fd4add14075834dcaf8a1901346","target_node_id":"f51c8f4ccbe4426491ed71391103fa92","id":"c4326d2e6c4e4bffbb0200dc3549c743"},{"type":"Edge","source_node_id":"f51c8f4ccbe4426491ed71391103fa92","target_node_id":"951d855b04be4499afa2f04f4ae072ee","id":"9f6202b9e3ca4195b1c825bbba7c859b"},{"type":"Edge","source_node_id":"62a75de039104138b869f184dc5f01c1","target_node_id":"73a1e43f071c47d3917f007c950f5836","branch_id":"d01c931a9ab54beabf423bd95c736699","id":"7939d7b2758d40b5b2e76d3cbff6a69f","name":"d01c931a9ab54beabf423bd95c736699"},{"type":"Edge","source_node_id":"73a1e43f071c47d3917f007c950f5836","target_node_id":"951d855b04be4499afa2f04f4ae072ee","id":"62127fee6a2540cba9c0478e351a6dbf"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Choice","choices":[{"name":"Yes","element":"Yes"},{"name":"No","element":"No"}],"id":"79e7f0172e83450dad7fa0ad95786958","name":"report_","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"String","name":"title","list":false,"id":"8c5374faf7bd46618b7bac17ca5245b1","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"Choice","choices":[{"name":"Confidentiality","element":"Confidentiality"},{"name":"Integrity","element":"Integrity"},{"name":"Availability","element":"Availability"}],"id":"cb55ed0460504e678f63876aeef42830","name":"category","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"String","name":"involved_persons","list":false,"id":"afe9e6e5948146219202f9d1a9527447","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"String","name":"number_of_records","list":false,"id":"cfe4fca89cb34e32922a963429addf06","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"True/False","id":"8e3c8ea6937949b98eb8b720e6bfd61d","name":"notifed_","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"String","name":"description","list":false,"id":"f95b6d8a62e14857a87b65852fad4c4d","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"String","name":"consequences","list":false,"id":"60f99e6bdafb4b93b2aa404effb2c846","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"String","name":"measures_taken","list":false,"id":"16724d8256b644209572cc67b5e2c7a7","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"Reference","table":"x_snc_gdpr_viola_0_breach","id":"d11affdbb71a469893586c394830ee02","name":"create_gdpr_breach_record_with_upload","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Choice","choices":[{"name":"Yes","element":"Yes"},{"name":"No","element":"No"}],"id":"3f8bcb7e865643ba852199e89ea947aa","name":"screenshot","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Image","id":"4d79f3ab154f4245bd853241c4118be1","name":"upload","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Reference","table":"x_snc_gdpr_viola_0_breach","id":"836aae32d8c444b6bb3245ed7d02b3a9","name":"create_gdpr_breach_record_no_upload","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bbdb119e973df510e110be4e6253afd1","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"3af75832974a79506692df14a253af17","name":"GDPR Violation","key_phrases":["GDPR Violation","gdpr","breach"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Create GDPR violation report from chat","model_type":"nlu_keyword","modify_confirmation_enabled":false,"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>3af75832974a79506692df14a253af17</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.51",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "1f6b7b49353f4bc5b49df1d3f40e3a5f": {
+          "id": "1f6b7b49353f4bc5b49df1d3f40e3a5f",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thanks for reaching out."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "c1c6e05273604db49fb2b43b4fa3884d": {
+          "id": "c1c6e05273604db49fb2b43b4fa3884d",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "0e128266c0294e84a8545b287ec2acd9": {
+          "name": "Report?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Would you like to report a possible GDPR violation or data breach?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "79e7f0172e83450dad7fa0ad95786958",
+          "id": "0e128266c0294e84a8545b287ec2acd9",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "detailDescription": ""
+        },
+        "7edac81c34c64a85a8788b918f45681a": {
+          "id": "7edac81c34c64a85a8788b918f45681a",
+          "stepType": "Decision",
+          "name": "Report or not"
+        },
+        "b0ebcd23ee7943a69d6eda2c9cd42f9e": {
+          "id": "b0ebcd23ee7943a69d6eda2c9cd42f9e",
+          "stepType": "TextPrompt",
+          "name": "Title",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please provide a brief and concise title or headline for this report"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "8c5374faf7bd46618b7bac17ca5245b1",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "detailDescription": ""
+        },
+        "0a41ae8ab3dd48d88bb83ca9c8cd3340": {
+          "name": "Category",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which category fits this violation the best?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "cb55ed0460504e678f63876aeef42830",
+          "id": "0a41ae8ab3dd48d88bb83ca9c8cd3340",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "detailDescription": ""
+        },
+        "92b7140bcf9a4520829a4274cc121db4": {
+          "id": "92b7140bcf9a4520829a4274cc121db4",
+          "stepType": "TextPrompt",
+          "name": "Involved persons",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How many individuals are affected by this violation?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "afe9e6e5948146219202f9d1a9527447",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "detailDescription": ""
+        },
+        "9a9256ad52f34d36a894b15e56f08815": {
+          "id": "9a9256ad52f34d36a894b15e56f08815",
+          "stepType": "TextPrompt",
+          "name": "Number of records",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How many data records (per affected individual) have been compromised?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "cfe4fca89cb34e32922a963429addf06",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "detailDescription": ""
+        },
+        "fed871eb434d4819b8e92b0462f131f4": {
+          "id": "fed871eb434d4819b8e92b0462f131f4",
+          "stepType": "BooleanPrompt",
+          "name": "Notifed?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Have the involved individualt been informed of this incident?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "8e3c8ea6937949b98eb8b720e6bfd61d",
+          "detailDescription": ""
+        },
+        "e59ef526527d44b9b5144a31e7f1cd80": {
+          "id": "e59ef526527d44b9b5144a31e7f1cd80",
+          "stepType": "TextPrompt",
+          "name": "Description",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please provide a detailed description of the incident."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "f95b6d8a62e14857a87b65852fad4c4d",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "detailDescription": ""
+        },
+        "85dcbd54c013424189a198847a648ff5": {
+          "id": "85dcbd54c013424189a198847a648ff5",
+          "stepType": "TextPrompt",
+          "name": "Consequences",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What do you think might be likely consequences from this leak?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "60f99e6bdafb4b93b2aa404effb2c846",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "detailDescription": ""
+        },
+        "34d019e4ffd64b39997980d5c39d06ec": {
+          "id": "34d019e4ffd64b39997980d5c39d06ec",
+          "stepType": "TextPrompt",
+          "name": "Measures taken",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which measures have been taken to avoid more incidents like this?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "16724d8256b644209572cc67b5e2c7a7",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "detailDescription": ""
+        },
+        "437128f791844955b8f20607750044d1": {
+          "name": "Screenshot",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you have a screenshot or similar to attach to this report?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "3f8bcb7e865643ba852199e89ea947aa",
+          "id": "437128f791844955b8f20607750044d1",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "detailDescription": ""
+        },
+        "62a75de039104138b869f184dc5f01c1": {
+          "id": "62a75de039104138b869f184dc5f01c1",
+          "stepType": "Decision",
+          "name": "Screenshot or not"
+        },
+        "62f13fd4add14075834dcaf8a1901346": {
+          "id": "62f13fd4add14075834dcaf8a1901346",
+          "stepType": "FilePrompt",
+          "name": "Upload",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Plesae upload the screenshot (or other relevant file) now"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "4d79f3ab154f4245bd853241c4118be1",
+          "detailDescription": ""
+        },
+        "951d855b04be4499afa2f04f4ae072ee": {
+          "id": "951d855b04be4499afa2f04f4ae072ee",
+          "stepType": "TextOutput",
+          "name": "Thank you",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "The GDPR breach has been registered and will be processed as soon as possible. Thank you!"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "53e9364ada284e6493d9aba0c51e445e"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "f51c8f4ccbe4426491ed71391103fa92": {
+          "id": "f51c8f4ccbe4426491ed71391103fa92",
+          "stepType": "CrudAction",
+          "name": "Create GDPR Breach Record with Upload",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "category",
+                  "expression": "{{vaInputs.category}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "involved_persons",
+                  "expression": "{{vaInputs.involved_persons}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "likely_consequences",
+                  "expression": "{{vaInputs.consequences}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.consequences}}",
+                            "displayValue": "Input Variables➛Consequences"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "measures_taken",
+                  "expression": "{{vaInputs.measures_taken}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.measures_taken}}",
+                            "displayValue": "Input Variables➛Measures Taken"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "description",
+                  "expression": "{{vaInputs.description}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.description}}",
+                            "displayValue": "Input Variables➛Description"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "opened_by",
+                  "expression": "{{vaInputs.user}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "persons_notified",
+                  "expression": "{{vaInputs.notifed_}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "title",
+                  "expression": "{{vaInputs.title}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.title}}",
+                            "displayValue": "Input Variables➛Title"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "data_records",
+                  "expression": "{{vaInputs.number_of_records}}"
+                }
+              ]
+            },
+            "queryString": "category={{vaInputs.category}}^involved_persons={{vaInputs.involved_persons}}^likely_consequences={{vaInputs.consequences}}^measures_taken={{vaInputs.measures_taken}}^description={{vaInputs.description}}^opened_by={{vaInputs.user}}^persons_notified={{vaInputs.notifed_}}^title={{vaInputs.title}}^data_records={{vaInputs.number_of_records}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "{{vaInputs.upload}}",
+              "mode": "data_pill"
+            }
+          ],
+          "variableId": "d11affdbb71a469893586c394830ee02"
+        },
+        "73a1e43f071c47d3917f007c950f5836": {
+          "id": "73a1e43f071c47d3917f007c950f5836",
+          "stepType": "CrudAction",
+          "name": "Create GDPR Breach Record No Upload",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "category",
+                  "expression": "{{vaInputs.category}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "likely_consequences",
+                  "expression": "{{vaInputs.consequences}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.consequences}}",
+                            "displayValue": "Input Variables➛Consequences"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "data_records",
+                  "expression": "{{vaInputs.number_of_records}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "description",
+                  "expression": "{{vaInputs.description}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.description}}",
+                            "displayValue": "Input Variables➛Description"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "involved_persons",
+                  "expression": "{{vaInputs.involved_persons}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "measures_taken",
+                  "expression": "{{vaInputs.measures_taken}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.measures_taken}}",
+                            "displayValue": "Input Variables➛Measures Taken"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "persons_notified",
+                  "expression": "{{vaInputs.notifed_}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "opened_by",
+                  "expression": "{{vaInputs.user}}"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "title",
+                  "expression": "{{vaInputs.title}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.title}}",
+                            "displayValue": "Input Variables➛Title"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "queryString": "category={{vaInputs.category}}^likely_consequences={{vaInputs.consequences}}^data_records={{vaInputs.number_of_records}}^description={{vaInputs.description}}^involved_persons={{vaInputs.involved_persons}}^measures_taken={{vaInputs.measures_taken}}^persons_notified={{vaInputs.notifed_}}^opened_by={{vaInputs.user}}^title={{vaInputs.title}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "836aae32d8c444b6bb3245ed7d02b3a9"
+        }
+      },
+      "edges": [
+        {
+          "id": "a51f5d0f4818422db4aea39ac29100fd",
+          "edgeType": "Edge",
+          "source": "1f6b7b49353f4bc5b49df1d3f40e3a5f",
+          "target": "0e128266c0294e84a8545b287ec2acd9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "294f54027d48432ebe25b30be8c7d8b4",
+          "edgeType": "Edge",
+          "source": "0e128266c0294e84a8545b287ec2acd9",
+          "target": "7edac81c34c64a85a8788b918f45681a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f074723bb7d940a48cc83e17e8a7b7cd",
+          "edgeType": "Branch",
+          "source": "7edac81c34c64a85a8788b918f45681a",
+          "target": "c1c6e05273604db49fb2b43b4fa3884d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.report_=No",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "f4fffc38655040cc89fcb5fe986eed25",
+          "edgeType": "Branch",
+          "source": "7edac81c34c64a85a8788b918f45681a",
+          "target": "b0ebcd23ee7943a69d6eda2c9cd42f9e",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.report_=Yes",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "d74d05fa95fb442793c1927c1c1b2cbe",
+          "edgeType": "Edge",
+          "source": "b0ebcd23ee7943a69d6eda2c9cd42f9e",
+          "target": "0a41ae8ab3dd48d88bb83ca9c8cd3340",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c2b7170aa6204e05bc32202f023c938c",
+          "edgeType": "Edge",
+          "source": "0a41ae8ab3dd48d88bb83ca9c8cd3340",
+          "target": "92b7140bcf9a4520829a4274cc121db4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "62d48d7c806d492eb0ccb7e9a29f9fed",
+          "edgeType": "Edge",
+          "source": "92b7140bcf9a4520829a4274cc121db4",
+          "target": "9a9256ad52f34d36a894b15e56f08815",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "067730f9bd114033b8eeef35ad04e5aa",
+          "edgeType": "Edge",
+          "source": "9a9256ad52f34d36a894b15e56f08815",
+          "target": "fed871eb434d4819b8e92b0462f131f4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "afdb000f7d79430da47ecf33c53605da",
+          "edgeType": "Edge",
+          "source": "fed871eb434d4819b8e92b0462f131f4",
+          "target": "e59ef526527d44b9b5144a31e7f1cd80",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f848a61ac2db435a847a7c6f31f61e71",
+          "edgeType": "Edge",
+          "source": "e59ef526527d44b9b5144a31e7f1cd80",
+          "target": "85dcbd54c013424189a198847a648ff5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "83d0d2bf1a6a4ede9b915ccb5e7c73fd",
+          "edgeType": "Edge",
+          "source": "85dcbd54c013424189a198847a648ff5",
+          "target": "34d019e4ffd64b39997980d5c39d06ec",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "efd7f51807a4450cb8ad8fbdaa24408d",
+          "edgeType": "Edge",
+          "source": "34d019e4ffd64b39997980d5c39d06ec",
+          "target": "437128f791844955b8f20607750044d1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a1821c2ad6a0440eb3838ce4336f7d21",
+          "edgeType": "Edge",
+          "source": "437128f791844955b8f20607750044d1",
+          "target": "62a75de039104138b869f184dc5f01c1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d840b0cc6a1948598f9a708839fd412e",
+          "edgeType": "Branch",
+          "source": "62a75de039104138b869f184dc5f01c1",
+          "target": "62f13fd4add14075834dcaf8a1901346",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.screenshot=Yes",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "34bfd2b6cd56491a8d6a6ec878941da3",
+          "edgeType": "Edge",
+          "source": "951d855b04be4499afa2f04f4ae072ee",
+          "target": "c1c6e05273604db49fb2b43b4fa3884d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c4326d2e6c4e4bffbb0200dc3549c743",
+          "edgeType": "Edge",
+          "source": "62f13fd4add14075834dcaf8a1901346",
+          "target": "f51c8f4ccbe4426491ed71391103fa92",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9f6202b9e3ca4195b1c825bbba7c859b",
+          "edgeType": "Edge",
+          "source": "f51c8f4ccbe4426491ed71391103fa92",
+          "target": "951d855b04be4499afa2f04f4ae072ee",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7939d7b2758d40b5b2e76d3cbff6a69f",
+          "edgeType": "Branch",
+          "source": "62a75de039104138b869f184dc5f01c1",
+          "target": "73a1e43f071c47d3917f007c950f5836",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.screenshot=No",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "62127fee6a2540cba9c0478e351a6dbf",
+          "edgeType": "Edge",
+          "source": "73a1e43f071c47d3917f007c950f5836",
+          "target": "951d855b04be4499afa2f04f4ae072ee",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "79e7f0172e83450dad7fa0ad95786958": {
+      "id": "79e7f0172e83450dad7fa0ad95786958",
+      "name": "report_",
+      "label": "Report?",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "0e128266c0294e84a8545b287ec2acd9",
+      "isHidden": false
+    },
+    "8c5374faf7bd46618b7bac17ca5245b1": {
+      "id": "8c5374faf7bd46618b7bac17ca5245b1",
+      "name": "title",
+      "label": "Title",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY5ODMxMTY5ODUwMSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "b0ebcd23ee7943a69d6eda2c9cd42f9e",
+      "isHidden": false
+    },
+    "cb55ed0460504e678f63876aeef42830": {
+      "id": "cb55ed0460504e678f63876aeef42830",
+      "name": "category",
+      "label": "Category",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Confidentiality",
+          "value": "Confidentiality"
+        },
+        {
+          "label": "Integrity",
+          "value": "Integrity"
+        },
+        {
+          "label": "Availability",
+          "value": "Availability",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "0a41ae8ab3dd48d88bb83ca9c8cd3340",
+      "isHidden": false
+    },
+    "afe9e6e5948146219202f9d1a9527447": {
+      "id": "afe9e6e5948146219202f9d1a9527447",
+      "name": "involved_persons",
+      "label": "Involved Persons",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY5ODMxMTk2NTk3MCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "92b7140bcf9a4520829a4274cc121db4",
+      "isHidden": false
+    },
+    "cfe4fca89cb34e32922a963429addf06": {
+      "id": "cfe4fca89cb34e32922a963429addf06",
+      "name": "number_of_records",
+      "label": "Number Of Records",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY5ODMxMjcyMTExNSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "9a9256ad52f34d36a894b15e56f08815",
+      "isHidden": false
+    },
+    "8e3c8ea6937949b98eb8b720e6bfd61d": {
+      "id": "8e3c8ea6937949b98eb8b720e6bfd61d",
+      "name": "notifed_",
+      "label": "Notifed?",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "fed871eb434d4819b8e92b0462f131f4",
+      "isHidden": false
+    },
+    "f95b6d8a62e14857a87b65852fad4c4d": {
+      "id": "f95b6d8a62e14857a87b65852fad4c4d",
+      "name": "description",
+      "label": "Description",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY5ODMxMjg4NjY1MSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "e59ef526527d44b9b5144a31e7f1cd80",
+      "isHidden": false
+    },
+    "60f99e6bdafb4b93b2aa404effb2c846": {
+      "id": "60f99e6bdafb4b93b2aa404effb2c846",
+      "name": "consequences",
+      "label": "Consequences",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY5ODMxMjkyMjQ1NSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "85dcbd54c013424189a198847a648ff5",
+      "isHidden": false
+    },
+    "16724d8256b644209572cc67b5e2c7a7": {
+      "id": "16724d8256b644209572cc67b5e2c7a7",
+      "name": "measures_taken",
+      "label": "Measures Taken",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY5ODMxMjk2MjI2MCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "34d019e4ffd64b39997980d5c39d06ec",
+      "isHidden": false
+    },
+    "d11affdbb71a469893586c394830ee02": {
+      "id": "d11affdbb71a469893586c394830ee02",
+      "name": "create_gdpr_breach_record_with_upload",
+      "label": "Create GDPR Breach Record With Upload",
+      "varType": "reference",
+      "table": "x_snc_gdpr_viola_0_breach",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "f51c8f4ccbe4426491ed71391103fa92",
+      "isHidden": false
+    },
+    "3f8bcb7e865643ba852199e89ea947aa": {
+      "id": "3f8bcb7e865643ba852199e89ea947aa",
+      "name": "screenshot",
+      "label": "Screenshot",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "437128f791844955b8f20607750044d1",
+      "isHidden": false
+    },
+    "4d79f3ab154f4245bd853241c4118be1": {
+      "id": "4d79f3ab154f4245bd853241c4118be1",
+      "name": "upload",
+      "label": "Upload",
+      "varType": "image",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "62f13fd4add14075834dcaf8a1901346",
+      "isHidden": false
+    },
+    "836aae32d8c444b6bb3245ed7d02b3a9": {
+      "id": "836aae32d8c444b6bb3245ed7d02b3a9",
+      "name": "create_gdpr_breach_record_no_upload",
+      "label": "Create GDPR Breach Record No Upload",
+      "varType": "reference",
+      "table": "x_snc_gdpr_viola_0_breach",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "73a1e43f071c47d3917f007c950f5836",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>GDPR Violation</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 10:31:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e201990847d6f110e5bcb098436d4320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_e201990847d6f110e5bcb098436d4320</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 10:31:52</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

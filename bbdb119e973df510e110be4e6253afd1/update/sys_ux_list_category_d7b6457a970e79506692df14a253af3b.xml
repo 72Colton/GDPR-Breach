@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="GDPR Violation_menu_config">124de1ca974ab5506692df14a253af94</configuration>
+        <description/>
+        <order>200</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>mattias.johnsson@snc</sys_created_by>
+        <sys_created_on>2023-10-26 12:34:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7b6457a970e79506692df14a253af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Breach Tasks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sys_ux_list_category_d7b6457a970e79506692df14a253af3b</sys_update_name>
+        <sys_updated_by>mattias.johnsson@snc</sys_updated_by>
+        <sys_updated_on>2023-10-26 12:34:27</sys_updated_on>
+        <title>Breach Tasks</title>
+    </sys_ux_list_category>
+</record_update>

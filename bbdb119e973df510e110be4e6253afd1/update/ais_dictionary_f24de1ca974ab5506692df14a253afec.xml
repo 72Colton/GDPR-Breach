@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source>x_snc_gdpr_viola_0_breach</data_source>
+        <derived>true</derived>
+        <field/>
+        <label>gdpr-violation Search Profile Default Spell Check Dictionary</label>
+        <last_derived>2023-10-27 08:26:56</last_derived>
+        <locale>en</locale>
+        <name>x_snc_gdpr_viola_0_gdpr_violation_search_profile_default_spell_check_dictionary</name>
+        <publish_id>0ffc2b4d-3908-40c2-9525-da1943577e59</publish_id>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 07:27:27</sys_created_on>
+        <sys_id>f24de1ca974ab5506692df14a253afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gdpr_viola_0_gdpr_violation_search_profile_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>ais_dictionary_f24de1ca974ab5506692df14a253afec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-24 07:27:27</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+</record_update>

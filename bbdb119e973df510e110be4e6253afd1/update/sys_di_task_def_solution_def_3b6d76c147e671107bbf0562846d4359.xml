@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_di_task_def_solution_def">
+    <sys_di_task_def_solution_def action="INSERT_OR_UPDATE">
+        <ml_capability_definition_base display_value="docintel_ocr_workflow_bf6df64147e671107bbf0562846d4372">736d76c147e671107bbf0562846d4356</ml_capability_definition_base>
+        <solution_type display_value="OCR">27d0b96cb70a2110cbc68b91ee11a93f</solution_type>
+        <sys_class_name>sys_di_task_def_solution_def</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 07:15:04</sys_created_on>
+        <sys_id>3b6d76c147e671107bbf0562846d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sys_di_task_def_solution_def_3b6d76c147e671107bbf0562846d4359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 07:15:04</sys_updated_on>
+        <task_definition display_value="Customer Master Data Extraction">bf6df64147e671107bbf0562846d4372</task_definition>
+    </sys_di_task_def_solution_def>
+</record_update>

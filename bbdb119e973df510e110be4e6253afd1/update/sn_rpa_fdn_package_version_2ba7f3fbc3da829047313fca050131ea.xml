@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_rpa_fdn_package_version">
+    <sn_rpa_fdn_package_version action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <code_quality_result>pass</code_quality_result>
+        <comments>New Username 2</comments>
+        <graceful_stop_enabled>false</graceful_stop_enabled>
+        <hash_code>f66356ae3bd8b978eaa47755b9000ba080dfd6922d5e3a7ff4c01cb1ae39631a</hash_code>
+        <is_import_attachment_in_progress>false</is_import_attachment_in_progress>
+        <life_cycle_stage_status display_value="Published">09aaa31773ba10109cc5aa114df6a78c</life_cycle_stage_status>
+        <metadata>{"Type":"AutxRpaProcess","RuntimeId":"","References":[{"PluginID":"0dd60979-221f-4f1d-8982-f41791d63066","Name":"Internet Explorer","Version":"6.0","Signature":"93E32D2D233CDBD6DCF5613519AF326B160DD5058942DFEE22F8E0AFC0DB9EE4"},{"PluginID":"293745f8-12ea-4a86-be5f-8cea9576f0b5","Name":"Essential Toolkit","Version":"6.0","Signature":"86CE239702C050D2F12A1C622B187DB3FD72AF4BD66ECD7235E65AAB1BE524F2"},{"PluginID":"a2d55069-f2ef-458d-bb23-c054f97512c7","Name":"Universal App Connector","Version":"3.0","Signature":"EF565DE1470222678EAD4A3E7517FA2C1040F4D9297316FF1891CCA8A32AA64E"},{"PluginID":"be36a04a-b045-46f7-ac32-dbcfc0ca7377","Name":"Essential Connectors","Version":"6.0","Signature":"BE85F2D0F651615684A018509B91004E31A988C216469C575054850565C718A3"}],"UserPlugins":[],"Activities":[{"ID":"674534b7-e594-44a6-b713-6228936efcd4","Name":"Main","InputParams":[],"OutputParams":[]}]}</metadata>
+        <package display_value="SOS">9f0d3eb097913590e110be4e6253af07</package>
+        <sys_class_name>sn_rpa_fdn_package_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-28 10:28:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2ba7f3fbc3da829047313fca050131ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>10011</sys_name>
+        <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
+        <sys_update_name>sn_rpa_fdn_package_version_2ba7f3fbc3da829047313fca050131ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-28 10:28:19</sys_updated_on>
+        <version>10011</version>
+    </sn_rpa_fdn_package_version>
+</record_update>

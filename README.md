@@ -58,7 +58,7 @@ Enable email sending, click Save:
 
 Now you are ready to try the app/demo:
 
-Go to the Employee Service Center. The address for that https://<your-instance-name>.service-now.com/esc.
+Go to the Employee Service Center. The address for that is https://your-instance-name.service-now.com/esc.
 ![image](https://github.com/user-attachments/assets/f276c960-2086-4a62-91bb-fe3767eb919d)
 
 Impersonate Billie Cowley:
@@ -69,10 +69,87 @@ Search for GDPR and click on the result:
 ![image](https://github.com/user-attachments/assets/7258da01-9f4a-448c-aee6-ad21723a3279)
 
 Submit a GDPR breach:
-![image](https://github.com/user-attachments/assets/15ff518f-e416-43d8-aedd-103699b1e493)
+![image](https://github.com/user-attachments/assets/693f4a6f-841e-4276-8023-7e621188ef0c)
 
 The record has been created:
-![image](https://github.com/user-attachments/assets/a7e93bea-950e-4eea-bf64-00ac9193a372)
+![image](https://github.com/user-attachments/assets/3c326766-30c1-444e-a46d-e42ffad8dab1)
+
+Billie receives an email:
+![image](https://github.com/user-attachments/assets/6741cec1-c3dd-4413-9040-05a2532c7255)
+
+Krystle, his manager, receives an approval request:
+![image](https://github.com/user-attachments/assets/de1195ba-6823-4f8d-9000-e323683485c3)
+
+Krystle "Approves" the request, remember to impersonate Krystle or log in as her:
+![image](https://github.com/user-attachments/assets/8bec1af5-cf6b-46b1-85a6-9275ad5950ea)
+
+Chris Harris (the CDO) receives notification of the possible breach and is prompted to review:
+<img width="1454" alt="image" src="https://github.com/user-attachments/assets/8cbf1367-4116-4858-b337-7a50bd3658b4">
+
+The link takes him to the Breach record. Remember to log in as Chris Harris:
+![image](https://github.com/user-attachments/assets/965d95b8-7fb4-4258-83d2-0a298dca86a9)
+
+Review the SLA (the clock is ticking):
+![image](https://github.com/user-attachments/assets/b586856d-e0ac-4331-9504-29225459fe88)
+
+His first task is to determine the validity of the breach and whether reporting is required:
+![image](https://github.com/user-attachments/assets/03bd7ef9-89f9-43a4-b14c-283805587c9c)
+
+After investigating, he determines that reporting is required so he updates the Breach record:
+![image](https://github.com/user-attachments/assets/e376338b-931c-4f62-a0f7-3deb58418db1)
+
+With this, he can now Complete the first task:
+![image](https://github.com/user-attachments/assets/fae0985e-3b99-4985-b36c-6927c2fd7d0a)
+
+A new Breach Task (Inform persons) has been created:
+![image](https://github.com/user-attachments/assets/acab5db5-98a6-4b06-a1e4-ee8dffc48af2)
+
+So he finds out who was involved in the data leak and informs them of the situation.
+When he is done, he can "Complete Task" by clicking the button:
+![image](https://github.com/user-attachments/assets/9149e905-5111-43c0-b4d8-26ab9178f956)
+
+The parent record Breach is updated automatically:
+![image](https://github.com/user-attachments/assets/3390fb2a-6e18-4cdc-9643-2ecab463af06)
+
+He now has the last Breach Task to complete which is to report the breach to Datatilsynet (Datatilsynet is the Danish authority that handles GDPR violations, you may want or need to edit the app to fit your country).
+![image](https://github.com/user-attachments/assets/295e8506-f096-484c-aeb4-3692519d8807)
+
+![image](https://github.com/user-attachments/assets/b26da762-9b2e-4cf5-86bf-699e7c16797b)
+
+The details of this task are beyond the scope of this demo as the demo is focusing on creating a structured workflow for ensuring GDPR compliance.
+
+When he has done that, he can "Complete Task":
+![image](https://github.com/user-attachments/assets/1fb7b3c4-0e1b-470b-b2e3-efde4803eb03)
+
+This concludes the Breach handling and closes the Breach Record:
+![image](https://github.com/user-attachments/assets/1e96cdc3-113c-4cd5-a502-80ca61fc4546)
+
+And it ends the SLA timer as the tasks have been completed in due time and the company stayed compliant:
+![image](https://github.com/user-attachments/assets/0eec61b9-06f0-46fb-9a2f-6259ad00737f)
+
+The end.
+
+Enjoy!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

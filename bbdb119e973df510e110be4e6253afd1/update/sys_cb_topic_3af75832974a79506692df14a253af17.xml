@@ -13,7 +13,7 @@
         <flexible_conversation_switching>false</flexible_conversation_switching>
         <foundational>false</foundational>
         <graph>{
-  "graph_api_version": "1.0.51",
+  "graph_api_version": "1.0.68",
   "goals": {
     "primary": {
       "id": "primary",
@@ -158,7 +158,8 @@
             "format": "Text",
             "script": ""
           },
-          "detailDescription": ""
+          "detailDescription": "",
+          "requestFeedback": true
         },
         "0a41ae8ab3dd48d88bb83ca9c8cd3340": {
           "name": "Category",
@@ -262,7 +263,8 @@
             "format": "Text",
             "script": ""
           },
-          "detailDescription": ""
+          "detailDescription": "",
+          "requestFeedback": true
         },
         "9a9256ad52f34d36a894b15e56f08815": {
           "id": "9a9256ad52f34d36a894b15e56f08815",
@@ -312,7 +314,8 @@
             "format": "Text",
             "script": ""
           },
-          "detailDescription": ""
+          "detailDescription": "",
+          "requestFeedback": true
         },
         "fed871eb434d4819b8e92b0462f131f4": {
           "id": "fed871eb434d4819b8e92b0462f131f4",
@@ -408,7 +411,8 @@
             "format": "Text",
             "script": ""
           },
-          "detailDescription": ""
+          "detailDescription": "",
+          "requestFeedback": true
         },
         "85dcbd54c013424189a198847a648ff5": {
           "id": "85dcbd54c013424189a198847a648ff5",
@@ -458,7 +462,8 @@
             "format": "Text",
             "script": ""
           },
-          "detailDescription": ""
+          "detailDescription": "",
+          "requestFeedback": true
         },
         "34d019e4ffd64b39997980d5c39d06ec": {
           "id": "34d019e4ffd64b39997980d5c39d06ec",
@@ -508,7 +513,8 @@
             "format": "Text",
             "script": ""
           },
-          "detailDescription": ""
+          "detailDescription": "",
+          "requestFeedback": true
         },
         "437128f791844955b8f20607750044d1": {
           "name": "Screenshot",
@@ -635,7 +641,8 @@
           "applicability": {
             "value": "",
             "mode": "query"
-          }
+          },
+          "requestFeedback": true
         },
         "f51c8f4ccbe4426491ed71391103fa92": {
           "id": "f51c8f4ccbe4426491ed71391103fa92",
@@ -1390,7 +1397,7 @@
         <nlu_model_label/>
         <nlu_provider/>
         <palette_label/>
-        <roles/>
+        <roles>x_snc_gdpr_viola_0.user</roles>
         <root_topic_id/>
         <secure_custom_input_control>false</secure_custom_input_control>
         <source_topic_id/>
@@ -1399,14 +1406,15 @@
         <sys_created_on>2023-10-26 09:10:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>3af75832974a79506692df14a253af17</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>GDPR Violation</sys_name>
         <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
         <sys_policy/>
         <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
         <sys_update_name>sys_cb_topic_3af75832974a79506692df14a253af17</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-30 10:31:50</sys_updated_on>
+        <sys_updated_on>2024-12-04 07:37:54</sys_updated_on>
+        <title>GDPR Violation</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>
     </sys_cb_topic>

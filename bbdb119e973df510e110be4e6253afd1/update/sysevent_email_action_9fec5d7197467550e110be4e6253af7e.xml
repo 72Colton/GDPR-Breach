@@ -36,9 +36,9 @@
         <message/>
         <message_html><![CDATA[<p>Dear ${opened_by.first_name},</p>
 <p>Thank you for your submission of a possible GDPR breach.</p>
-<p>Our compliance team will immediately look into the incident and the information that you have provided.<br />Should we need additional information from you, we will reach out via email.</p>
-<p>You can follow the case here:&nbsp;<a href="https://jcmdemodvl2.service-now.com/esc?id=ticket&amp;is_new_order=true&amp;table=x_snc_gdpr_viola_0_breach&amp;sys_id=${sys_id}">${number}</a></p>
-<p>Kind regards,<br />${opened_by.company.name}</p>]]></message_html>
+<p>Our compliance team will immediately look into the incident and the information that you have provided.<br>Should we need additional information from you, we will reach out via email.</p>
+<p>You can follow the case here:&nbsp;<a href="https://${mail_script:Write Instance Name}.service-now.com/esc?id=ticket&amp;is_new_order=true&amp;table=x_snc_gdpr_viola_0_breach&amp;sys_id=${sys_id}">${number}</a></p>
+<p>Kind regards,<br>${opened_by.company.name}</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>GDPR Breach Reported</name>
@@ -60,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9fec5d7197467550e110be4e6253af7e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>GDPR Breach Reported</sys_name>
         <sys_overrides/>
         <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
@@ -68,7 +68,7 @@
         <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
         <sys_update_name>sysevent_email_action_9fec5d7197467550e110be4e6253af7e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-24 12:41:28</sys_updated_on>
+        <sys_updated_on>2024-12-05 08:42:58</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

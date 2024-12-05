@@ -5,14 +5,14 @@
         <description/>
         <name>Audience for app gdpr-violation</name>
         <role_names/>
-        <roles>f3db119e973df510e110be4e6253aff8,f3db119e973df510e110be4e6253aff3,ffdb119e973df510e110be4e6253affa</roles>
+        <roles>f3db119e973df510e110be4e6253aff8,ffdb119e973df510e110be4e6253affa,f3db119e973df510e110be4e6253aff3,b05926fa0a0a0aa7000130023e0bde98</roles>
         <sys_class_name>sys_ux_applicability</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-24 07:27:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e4de1ca974ab5506692df14a253af27</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Audience for app gdpr-violation</sys_name>
         <sys_overrides/>
         <sys_package display_value="GDPR Violation" source="x_snc_gdpr_viola_0">bbdb119e973df510e110be4e6253afd1</sys_package>
@@ -20,6 +20,6 @@
         <sys_scope display_value="GDPR Violation">bbdb119e973df510e110be4e6253afd1</sys_scope>
         <sys_update_name>sys_ux_applicability_1e4de1ca974ab5506692df14a253af27</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-24 07:27:25</sys_updated_on>
+        <sys_updated_on>2024-12-03 12:47:28</sys_updated_on>
     </sys_ux_applicability>
 </record_update>

@@ -127,6 +127,10 @@ This concludes the Breach handling and closes the Breach Record:
 And it ends the SLA timer as the tasks have been completed in due time and the company stayed compliant:
 ![image](https://github.com/user-attachments/assets/0eec61b9-06f0-46fb-9a2f-6259ad00737f)
 
+Finally Billie receives an email:
+<img width="1437" alt="image" src="https://github.com/user-attachments/assets/63856bc7-1718-4aa4-9b80-b1b940b2e15a">
+
+
 The end.
 
 Enjoy!

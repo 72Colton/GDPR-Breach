@@ -71,6 +71,9 @@ Search for GDPR and click on the result:
 Submit a GDPR breach:
 ![image](https://github.com/user-attachments/assets/15ff518f-e416-43d8-aedd-103699b1e493)
 
+The record has been created:
+![image](https://github.com/user-attachments/assets/a7e93bea-950e-4eea-bf64-00ac9193a372)
+
 
 
 
